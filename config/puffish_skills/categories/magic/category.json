@@ -1,0 +1,11 @@
+{
+	"unlocked_by_default": true,
+	"title": "Magic",
+	"icon": {
+		"type": "item",
+		"data": {
+			"item": "irons_spellbooks:copper_spell_book"
+		}
+	},
+	"background": "textures/gui/advancements/backgrounds/adventure.png"
+}

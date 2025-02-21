@@ -1,0 +1,8480 @@
+{
+	"experience_per_level": {
+		"type": "values",
+		"data": {
+			"values": [
+				350
+			]
+		}
+	},
+	"sources": [
+		{
+			"type": "puffish_skills:kill_entity",
+			"data": {
+				"variables": {
+					"dropped_xp": {
+						"operations": [
+							{
+								"type": "get_dropped_experience"
+							}
+						]
+					},
+					"max_health": {
+						"operations": [
+							{
+								"type": "get_killed_living_entity"
+							},
+							{
+								"type": "get_max_health"
+							}
+						]
+					}
+				},
+				"experience": "dropped_xp + max_health / 20",
+				"anti_farming": {
+					"limit_per_chunk": 15,
+					"reset_after_seconds": 300
+				}
+			}
+		},
+		{
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"blaze_storm": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:blaze_storm"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !blaze_storm & fire_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "blaze_storm",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"fireball": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:fireball"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !fireball & fire_school",
+				  "expression": "level + (mana_cost / 1) + rarity"
+				},
+				{
+				  "condition": "fireball",
+				  "expression": "(20 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"flaming_barrage": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:flaming_barrage"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !flaming_barrage & fire_school",
+				  "expression": "level + (mana_cost / 3) + rarity"
+				},
+				{
+				  "condition": "flaming_barrage",
+				  "expression": "(level + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"firebolt": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:firebolt"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !firebolt & fire_school",
+				  "expression": "level + (mana_cost / 4) + rarity"
+				},
+				{
+				  "condition": "firebolt",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"wall_of_fire": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:wall_of_fire"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !wall_of_fire & fire_school",
+				  "expression": "level + (mana_cost / 4) + rarity"
+				},
+				{
+				  "condition": "wall_of_fire",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"fire_breath": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:fire_breath"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !fire_breath & fire_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "fire_breath",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"heat_surge": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:heat_surge"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !heat_surge & fire_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "heat_surge",
+				  "expression": "(12 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"magma_bomb": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:magma_bomb"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !magma_bomb & fire_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "magma_bomb",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"burning_dash": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:burning_dash"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !burning_dash & fire_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "burning_dash",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"flaming_strike": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:flaming_strike"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !flaming_strike & fire_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "flaming_strike",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"fire_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:fire"
+					  }
+					}
+				  ]
+				},
+				"scorch": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:scorch"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !scorch & fire_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "scorch",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"blood_step": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:blood_step"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !blood_step & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "blood_step",
+				  "expression": "(8 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"blood_slash": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:blood_slash"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !blood_slash & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "blood_slash",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"blood_needles": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:blood_needles"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !blood_needles & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "blood_needles",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"wither_skull": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:wither_skull"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !wither_skull & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "wither_skull",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"sacrifice": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:sacrifice"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !sacrifice & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "sacrifice",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"ray_of_siphoning": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:ray_of_siphoning"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !ray_of_siphoning & blood_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "ray_of_siphoning",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"raise_dead": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:raise_dead"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !raise_dead & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "raise_dead",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"heartstop": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:heartstop"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !heartstop & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "heartstop",
+				  "expression": "(20 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"devour": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:devour"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !devour & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "devour",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"blood_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:blood"
+					  }
+					}
+				  ]
+				},
+				"acupuncture": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:acupuncture"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !acupuncture & blood_school",
+				  "expression": "level + (mana_cost / 2) + rarity"
+				},
+				{
+				  "condition": "acupuncture",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"dragon_breath": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:dragon_breath"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !dragon_breath & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "dragon_breath",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"teleport": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:teleport"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !teleport & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "teleport",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"starfall": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:starfall"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !starfall & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "starfall",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"magic_missile": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:magic_missile"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !magic_missile & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "magic_missile",
+				  "expression": "(3 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"magic_arrow": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:magic_arrow"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !magic_arrow & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "magic_arrow",
+				  "expression": "(level + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"evasion": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:evasion"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !evasion & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "evasion",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"black_hole": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:black_hole"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !black_hole & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "black_hole",
+				  "expression": "(40 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"echoing_strikes": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:echoing_strikes"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !echoing_strikes & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "echoing_strikes",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ender_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ender"
+					  }
+					}
+				  ]
+				},
+				"portal": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:portal"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !portal & ender_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "portal",
+				  "expression": "(20 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"firecracker": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:firecracker"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !firecracker & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "firecracker",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"fang_ward": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:fang_ward"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !fang_ward & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "fang_ward",
+				  "expression": "(8 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"fang_strike": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:fang_strike"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !fang_strike & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "fang_strike",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"summon_horse": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:summon_horse"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !summon_horse & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "summon_horse",
+				  "expression": "(8 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"chain_creeper": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:chain_creeper"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !chain_creeper & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "chain_creeper",
+				  "expression": "(12 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"gust": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:gust"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !gust & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "gust",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"wololo": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:wololo"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !wololo & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "wololo",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"arrow_volley": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:arrow_volley"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !arrow_volley & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "arrow_volley",
+				  "expression": "(14 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"slow": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:slow"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !slow & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "slow",
+				  "expression": "(13 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"summon_vex": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:summon_vex"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !summon_vex & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "summon_vex",
+				  "expression": "(14 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"spectral_hammer": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:spectral_hammer"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !spectral_hammer & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "spectral_hammer",
+				  "expression": "(3 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"shield": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:shield"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !shield & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "shield",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"lob_creeper": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:lob_creeper"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !lob_creeper & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "lob_creeper",
+				  "expression": "(3 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"evocation_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:evocation"
+					  }
+					}
+				  ]
+				},
+				"invisibility": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:invisibility"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !invisibility & evocation_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "invisibility",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		 {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"blessing_of_life": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:blessing_of_life"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !blessing_of_life & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "blessing_of_life",
+				  "expression": "(4 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"fortify": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:fortify"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !fortify & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "fortify",
+				  "expression": "(6 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"healing_circle": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:healing_circle"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !healing_circle & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "healing_circle",
+				  "expression": "(18 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"guiding_bolt": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:guiding_bolt"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !guiding_bolt & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "guiding_bolt",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"haste": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:haste"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !haste & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "haste",
+				  "expression": "(7 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"wisp": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:wisp"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !wisp & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "wisp",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"divine_smite": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:divine_smite"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !divine_smite & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "divine_smite",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"angel_wing": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:angel_wing"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !angel_wing & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "angel_wing",
+				  "expression": "(16 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"holy_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:holy"
+					  }
+					}
+				  ]
+				},
+				"heal": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:heal"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !heal & holy_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "heal",
+				  "expression": "(10 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"ice_block": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:ice_block"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !ice_block & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "ice_block",
+				  "expression": "(7 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"icicle": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:icicle"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !icicle & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "icicle",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"summon_polar_bear": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:summon_polar_bear"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !summon_polar_bear & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "summon_polar_bear",
+				  "expression": "(18 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"frostwave": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:frostwave"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !frostwave & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "frostwave",
+				  "expression": "(6 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"ray_of_frost": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:ray_of_frost"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !ray_of_frost & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "ray_of_frost",
+				  "expression": "(6 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"frost_step": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:frost_step"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !frost_step & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "frost_step",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"ice_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:ice"
+					  }
+					}
+				  ]
+				},
+				"cone_of_cold": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:cone_of_cold"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !cone_of_cold & ice_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "cone_of_cold",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"thunderstorm": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:thunderstorm"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !thunderstorm & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "thunderstorm",
+				  "expression": "(12 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"shockwave": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:shockwave"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !shockwave & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "shockwave",
+				  "expression": "(8 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"lightning_lance": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:lightning_lance"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !lightning_lance & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "lightning_lance",
+				  "expression": "(16 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"electrocute": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:electrocute"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !electrocute & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "electrocute",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"chain_lightning": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:chain_lightning"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !chain_lightning & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "chain_lightning",
+				  "expression": "(6 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"ascension": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:ascension"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !ascension & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "ascension",
+				  "expression": "(4 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"charge": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:charge"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !charge & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "charge",
+				  "expression": "(8 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"lightning_bolt": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:lightning_bolt"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !lightning_bolt & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "lightning_bolt",
+				  "expression": "(20 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"lightning_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:lightning"
+					  }
+					}
+				  ]
+				},
+				"ball_lightning": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:ball_lightning"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !ball_lightning & lightning_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "ball_lightning",
+				  "expression": "(4 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"poison_breath": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:poison_breath"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !poison_breath & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "poison_breath",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"poison_arrow": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:poison_arrow"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !poison_arrow & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "poison_arrow",
+				  "expression": "(6 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"blight": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:blight"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !blight & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "blight",
+				  "expression": "(4 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"acid_orb": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:acid_orb"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !acid_orb & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "acid_orb",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"root": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:root"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !root & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "root",
+				  "expression": "(6 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"spider_aspect": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:spider_aspect"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !spider_aspect & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "spider_aspect",
+				  "expression": "(5 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"firefly_swarm": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:firefly_swarm"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !firefly_swarm & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "firefly_swarm",
+				  "expression": "(11 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"oakskin": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:oakskin"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !oakskin & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "oakskin",
+				  "expression": "(4 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"poison_splash": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:poison_splash"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !poison_splash & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "poison_splash",
+				  "expression": "(11 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"gluttony": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:gluttony"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !gluttony & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "gluttony",
+				  "expression": "(2 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"stomp": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:stomp"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !stomp & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "stomp",
+				  "expression": "(7 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"nature_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:nature"
+					  }
+					}
+				  ]
+				},
+				"earthquake": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:earthquake"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !earthquake & nature_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "earthquake",
+				  "expression": "(12 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"eldritch_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:eldritch"
+					  }
+					}
+				  ]
+				},
+				"abyssal_shroud": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:abyssal_shroud"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !abyssal_shroud & eldritch_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "abyssal_shroud",
+				  "expression": "(23 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"eldritch_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:eldritch"
+					  }
+					}
+				  ]
+				},
+				"sculk_tentacles": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:sculk_tentacles"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !sculk_tentacles & eldritch_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "sculk_tentacles",
+				  "expression": "(23 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"eldritch_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:eldritch"
+					  }
+					}
+				  ]
+				},
+				"sonic_boom": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:sonic_boom"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !sonic_boom & eldritch_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "sonic_boom",
+				  "expression": "(19 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"eldritch_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:eldritch"
+					  }
+					}
+				  ]
+				},
+				"planar_sight": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:planar_sight"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !planar_sight & eldritch_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "planar_sight",
+				  "expression": "(20 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"eldritch_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:eldritch"
+					  }
+					}
+				  ]
+				},
+				"telekinesis": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:telekinesis"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !telekinesis & eldritch_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "telekinesis",
+				  "expression": "(level + (mana_cost_per_second / 10)) / 2"
+				}
+			  ]
+			}
+		  },
+		  {
+			"type": "pufferfish_unofficial_additions:spell_casting",
+			"data": {
+			  "variables": {
+				"level": {
+				  "operations": [
+					{
+					  "type": "level"
+					}
+				  ]
+				},
+				"rarity": {
+				  "operations": [
+					{
+					  "type": "rarity_name"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"value": "LEGENDARY"
+					  }
+					},
+					{
+					  "type": "switch",
+					  "data": {
+						"true": 5,
+						"false": 1
+					  }
+					}
+				  ]
+				},
+				"mana_cost": {
+				  "operations": [
+					{
+					  "type": "mana_cost"
+					}
+				  ]
+				},
+				"mana_cost_per_second": {
+				  "operations": [
+					{
+					  "type": "mana_cost_per_second"
+					}
+				  ]
+				},
+				"spellbook": {
+				  "operations": [
+					{
+					  "type": "spellbook"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"item": "irons_spellbooks:iron_spell_book"
+					  }
+					}
+				  ]
+				},
+				"eldritch_school": {
+				  "operations": [
+					{
+					  "type": "school"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"school": "irons_spellbooks:eldritch"
+					  }
+					}
+				  ]
+				},
+				"eldritch_blast": {
+				  "operations": [
+					{
+					  "type": "spell"
+					},
+					{
+					  "type": "puffish_skills:test",
+					  "data": {
+						"spell": "irons_spellbooks:eldritch_blast"
+					  }
+					}
+				  ]
+				}
+			  },
+			  "experience": [
+				{
+				  "condition": "spellbook & !eldritch_blast & eldritch_school",
+				  "expression": "level + (mana_cost / 5) + rarity"
+				},
+				{
+				  "condition": "eldritch_blast",
+				  "expression": "(4 + (mana_cost_per_second / 1)) / 1"
+				}
+			  ]
+			}
+		  }
+	]
+}
