@@ -1,0 +1,1107 @@
+[30Jan2025 14:32:33.553] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[30Jan2025 14:32:33.555] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.6 by Arch Linux; OS Linux arch amd64 version 6.12.10-zen1-1-zen
+[30Jan2025 14:32:34.019] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[30Jan2025 14:32:34.044] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/ronan/ramdisk/Server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[30Jan2025 14:32:34.257] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ronan/ramdisk/Server/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.0/fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[30Jan2025 14:32:34.257] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ronan/ramdisk/Server/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.0/javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[30Jan2025 14:32:34.258] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ronan/ramdisk/Server/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.0/lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[30Jan2025 14:32:34.258] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ronan/ramdisk/Server/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.0/mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[30Jan2025 14:32:34.467] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
+[30Jan2025 14:32:34.468] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 17 dependencies adding them to mods collection
+[30Jan2025 14:32:35.959] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[30Jan2025 14:32:36.017] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[30Jan2025 14:32:36.091] [main/WARN] [mixin/]: Reference map 'corpsecurioscompat.refmap.json' for gravestonecurioscompat.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.098] [main/WARN] [mixin/]: Reference map 'sdmgamestageshelper.refmap.json' for sdmgamestageshelper.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.099] [main/WARN] [mixin/]: Reference map '${mod_id}.refmap.json' for irons_spells_js.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.100] [main/WARN] [mixin/]: Reference map 'kubejsdelight.refmap.json' for kubejsdelight.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.134] [main/WARN] [mixin/]: Reference map 'pufferfish_unofficial_additions.refmap.json' for pufferfish_unofficial_additions.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.135] [main/WARN] [mixin/]: Reference map 'heartstone-common-refmap.json' for heartstone-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.145] [main/WARN] [mixin/]: Reference map 'packetfixer-forge-forge-refmap.json' for packetfixer-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.147] [main/WARN] [mixin/]: Reference map 'chiselsandbits.refmap.json' for chisels-and-bits.mixins.json could not be read. If this is a development environment you can ignore this message
+[30Jan2025 14:32:36.460] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:36.460] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/gui/screens/Screen (java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER)
+[30Jan2025 14:32:36.461] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.gui.screens.Screen was not found relics.mixins.json:ScreenMixin
+[30Jan2025 14:32:36.582] [main/WARN] [mixin/]: Error loading class: com/probejs/specials/special/FormatterRegistry (java.lang.ClassNotFoundException: com.probejs.specials.special.FormatterRegistry)
+[30Jan2025 14:32:36.584] [main/WARN] [mixin/]: Error loading class: com/probejs/docs/formatter/NameResolver (java.lang.ClassNotFoundException: com.probejs.docs.formatter.NameResolver)
+[30Jan2025 14:32:36.594] [main/WARN] [mixin/]: Error loading class: com/probejs/specials/SnippetCompiler$KubeDump (java.lang.ClassNotFoundException: com.probejs.specials.SnippetCompiler$KubeDump)
+[30Jan2025 14:32:36.717] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/atomizer/AtomizerBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.atomizer.AtomizerBlockEntity)
+[30Jan2025 14:32:36.717] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.atomizer.AtomizerBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.AtomizerBlockEntityMixin
+[30Jan2025 14:32:36.718] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/combiner/CombinerBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.combiner.CombinerBlockEntity)
+[30Jan2025 14:32:36.718] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.combiner.CombinerBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.CombinerBlockEntityMixin
+[30Jan2025 14:32:36.719] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/compactor/CompactorBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.compactor.CompactorBlockEntity)
+[30Jan2025 14:32:36.719] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.compactor.CompactorBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.CompactorBlockEntityMixin
+[30Jan2025 14:32:36.720] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/dissolver/DissolverBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.dissolver.DissolverBlockEntity)
+[30Jan2025 14:32:36.720] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.dissolver.DissolverBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.DissolverBlockEntityMixin
+[30Jan2025 14:32:36.720] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/fission/FissionControllerBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.fission.FissionControllerBlockEntity)
+[30Jan2025 14:32:36.720] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.fission.FissionControllerBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.FissionControllerBlockEntityMixin
+[30Jan2025 14:32:36.720] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/fusion/FusionControllerBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.fusion.FusionControllerBlockEntity)
+[30Jan2025 14:32:36.720] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.fusion.FusionControllerBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.FusionControllerBlockEntityMixin
+[30Jan2025 14:32:36.721] [main/WARN] [mixin/]: Error loading class: com/smashingmods/alchemistry/common/block/liquifier/LiquifierBlockEntity (java.lang.ClassNotFoundException: com.smashingmods.alchemistry.common.block.liquifier.LiquifierBlockEntity)
+[30Jan2025 14:32:36.721] [main/WARN] [mixin/]: @Mixin target com.smashingmods.alchemistry.common.block.liquifier.LiquifierBlockEntity was not found recipemachinestage.mixins.json:integration.alchemistry.LiquifierBlockEntityMixin
+[30Jan2025 14:32:36.721] [main/WARN] [mixin/]: Error loading class: appeng/blockentity/misc/ChargerBlockEntity (java.lang.ClassNotFoundException: appeng.blockentity.misc.ChargerBlockEntity)
+[30Jan2025 14:32:36.721] [main/WARN] [mixin/]: @Mixin target appeng.blockentity.misc.ChargerBlockEntity was not found recipemachinestage.mixins.json:integration.applied.ChargerBlockEntityMixin
+[30Jan2025 14:32:36.722] [main/WARN] [mixin/]: Error loading class: appeng/blockentity/misc/InscriberBlockEntity (java.lang.ClassNotFoundException: appeng.blockentity.misc.InscriberBlockEntity)
+[30Jan2025 14:32:36.722] [main/WARN] [mixin/]: @Mixin target appeng.blockentity.misc.InscriberBlockEntity was not found recipemachinestage.mixins.json:integration.applied.InscriberBlockEntityMixin
+[30Jan2025 14:32:36.722] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/spell/effect/EffectCrush (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.spell.effect.EffectCrush)
+[30Jan2025 14:32:36.722] [main/WARN] [mixin/]: @Mixin target com.hollingsworth.arsnouveau.common.spell.effect.EffectCrush was not found recipemachinestage.mixins.json:integration.ars_nouveau.EffectCrushMixin
+[30Jan2025 14:32:36.722] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/block/tile/EnchantingApparatusTile (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.block.tile.EnchantingApparatusTile)
+[30Jan2025 14:32:36.722] [main/WARN] [mixin/]: @Mixin target com.hollingsworth.arsnouveau.common.block.tile.EnchantingApparatusTile was not found recipemachinestage.mixins.json:integration.ars_nouveau.EnchantingApparatusTileMixin
+[30Jan2025 14:32:36.723] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/block/tile/ImbuementTile (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.block.tile.ImbuementTile)
+[30Jan2025 14:32:36.723] [main/WARN] [mixin/]: @Mixin target com.hollingsworth.arsnouveau.common.block.tile.ImbuementTile was not found recipemachinestage.mixins.json:integration.ars_nouveau.ImbuementTileMixin
+[30Jan2025 14:32:36.723] [main/WARN] [mixin/]: Error loading class: com/hollingsworth/arsnouveau/common/block/tile/ScribesTile (java.lang.ClassNotFoundException: com.hollingsworth.arsnouveau.common.block.tile.ScribesTile)
+[30Jan2025 14:32:36.723] [main/WARN] [mixin/]: @Mixin target com.hollingsworth.arsnouveau.common.block.tile.ScribesTile was not found recipemachinestage.mixins.json:integration.ars_nouveau.ScribesTileMixin
+[30Jan2025 14:32:36.724] [main/WARN] [mixin/]: Error loading class: wayoftime/bloodmagic/altar/BloodAltar (java.lang.ClassNotFoundException: wayoftime.bloodmagic.altar.BloodAltar)
+[30Jan2025 14:32:36.724] [main/WARN] [mixin/]: @Mixin target wayoftime.bloodmagic.altar.BloodAltar was not found recipemachinestage.mixins.json:integration.bloodmagic.BloodAltarMixin
+[30Jan2025 14:32:36.724] [main/WARN] [mixin/]: Error loading class: wayoftime/bloodmagic/common/tile/TileAlchemicalReactionChamber (java.lang.ClassNotFoundException: wayoftime.bloodmagic.common.tile.TileAlchemicalReactionChamber)
+[30Jan2025 14:32:36.724] [main/WARN] [mixin/]: @Mixin target wayoftime.bloodmagic.common.tile.TileAlchemicalReactionChamber was not found recipemachinestage.mixins.json:integration.bloodmagic.TileAlchemicalReactionChamberMixin
+[30Jan2025 14:32:36.724] [main/WARN] [mixin/]: Error loading class: wayoftime/bloodmagic/common/tile/TileAlchemyArray (java.lang.ClassNotFoundException: wayoftime.bloodmagic.common.tile.TileAlchemyArray)
+[30Jan2025 14:32:36.724] [main/WARN] [mixin/]: @Mixin target wayoftime.bloodmagic.common.tile.TileAlchemyArray was not found recipemachinestage.mixins.json:integration.bloodmagic.TileAlchemyArrayMixin
+[30Jan2025 14:32:36.725] [main/WARN] [mixin/]: Error loading class: wayoftime/bloodmagic/common/tile/TileAlchemyTable (java.lang.ClassNotFoundException: wayoftime.bloodmagic.common.tile.TileAlchemyTable)
+[30Jan2025 14:32:36.725] [main/WARN] [mixin/]: @Mixin target wayoftime.bloodmagic.common.tile.TileAlchemyTable was not found recipemachinestage.mixins.json:integration.bloodmagic.TileAlchemyTableMixin
+[30Jan2025 14:32:36.725] [main/WARN] [mixin/]: Error loading class: wayoftime/bloodmagic/common/tile/TileSoulForge (java.lang.ClassNotFoundException: wayoftime.bloodmagic.common.tile.TileSoulForge)
+[30Jan2025 14:32:36.725] [main/WARN] [mixin/]: @Mixin target wayoftime.bloodmagic.common.tile.TileSoulForge was not found recipemachinestage.mixins.json:integration.bloodmagic.TileSoulForgeMixin
+[30Jan2025 14:32:36.725] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/block_entity/BreweryBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.block_entity.BreweryBlockEntity)
+[30Jan2025 14:32:36.725] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.block_entity.BreweryBlockEntity was not found recipemachinestage.mixins.json:integration.botania.BreweryBlockEntityMixin
+[30Jan2025 14:32:36.726] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/block_entity/mana/ManaPoolBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.block_entity.mana.ManaPoolBlockEntity)
+[30Jan2025 14:32:36.726] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.block_entity.mana.ManaPoolBlockEntity was not found recipemachinestage.mixins.json:integration.botania.ManaPoolBlockEntityMixin
+[30Jan2025 14:32:36.726] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/flower/functional/OrechidBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.flower.functional.OrechidBlockEntity)
+[30Jan2025 14:32:36.726] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.flower.functional.OrechidBlockEntity was not found recipemachinestage.mixins.json:integration.botania.OrechidBlockEntityMixin
+[30Jan2025 14:32:36.727] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/block_entity/PetalApothecaryBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.block_entity.PetalApothecaryBlockEntity)
+[30Jan2025 14:32:36.727] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.block_entity.PetalApothecaryBlockEntity was not found recipemachinestage.mixins.json:integration.botania.PetalApothecaryBlockEntityMixin
+[30Jan2025 14:32:36.727] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/flower/PureDaisyBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.flower.PureDaisyBlockEntity)
+[30Jan2025 14:32:36.727] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.flower.PureDaisyBlockEntity was not found recipemachinestage.mixins.json:integration.botania.PureDaisyBlockEntityMixin
+[30Jan2025 14:32:36.727] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/block_entity/RunicAltarBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.block_entity.RunicAltarBlockEntity)
+[30Jan2025 14:32:36.727] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.block_entity.RunicAltarBlockEntity was not found recipemachinestage.mixins.json:integration.botania.RunicAltarBlockEntityMixin
+[30Jan2025 14:32:36.728] [main/WARN] [mixin/]: Error loading class: vazkii/botania/common/block/block_entity/TerrestrialAgglomerationPlateBlockEntity (java.lang.ClassNotFoundException: vazkii.botania.common.block.block_entity.TerrestrialAgglomerationPlateBlockEntity)
+[30Jan2025 14:32:36.728] [main/WARN] [mixin/]: @Mixin target vazkii.botania.common.block.block_entity.TerrestrialAgglomerationPlateBlockEntity was not found recipemachinestage.mixins.json:integration.botania.TerrestrialAgglomerationPlateBlockEntityMixin
+[30Jan2025 14:32:36.737] [main/WARN] [mixin/]: Error loading class: com/brandon3055/draconicevolution/blocks/tileentity/TileFusionCraftingCore (java.lang.ClassNotFoundException: com.brandon3055.draconicevolution.blocks.tileentity.TileFusionCraftingCore)
+[30Jan2025 14:32:36.737] [main/WARN] [mixin/]: @Mixin target com.brandon3055.draconicevolution.blocks.tileentity.TileFusionCraftingCore was not found recipemachinestage.mixins.json:integration.draconic_evolution.TileFusionCraftingCoreMixin
+[30Jan2025 14:32:36.738] [main/WARN] [mixin/]: Error loading class: elucent/eidolon/common/tile/BrazierTileEntity (java.lang.ClassNotFoundException: elucent.eidolon.common.tile.BrazierTileEntity)
+[30Jan2025 14:32:36.738] [main/WARN] [mixin/]: @Mixin target elucent.eidolon.common.tile.BrazierTileEntity was not found recipemachinestage.mixins.json:integration.eidolon.BrazierTileEntityMixin
+[30Jan2025 14:32:36.738] [main/WARN] [mixin/]: Error loading class: elucent/eidolon/common/tile/CrucibleTileEntity (java.lang.ClassNotFoundException: elucent.eidolon.common.tile.CrucibleTileEntity)
+[30Jan2025 14:32:36.738] [main/WARN] [mixin/]: @Mixin target elucent.eidolon.common.tile.CrucibleTileEntity was not found recipemachinestage.mixins.json:integration.eidolon.CrucibleTileEntityMixin
+[30Jan2025 14:32:36.739] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/AlchemyTabletBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.AlchemyTabletBlockEntity)
+[30Jan2025 14:32:36.739] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.AlchemyTabletBlockEntity was not found recipemachinestage.mixins.json:integration.embers.AlchemyTabletBlockEntityMixin
+[30Jan2025 14:32:36.739] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/DawnstoneAnvilBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.DawnstoneAnvilBlockEntity)
+[30Jan2025 14:32:36.739] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.DawnstoneAnvilBlockEntity was not found recipemachinestage.mixins.json:integration.embers.DawnstoneAnvilBlockEntityMixin
+[30Jan2025 14:32:36.739] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/EmberActivatorBottomBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.EmberActivatorBottomBlockEntity)
+[30Jan2025 14:32:36.740] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.EmberActivatorBottomBlockEntity was not found recipemachinestage.mixins.json:integration.embers.EmberActivatorBottomBlockEntityMixin
+[30Jan2025 14:32:36.740] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/EmberBoreBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.EmberBoreBlockEntity)
+[30Jan2025 14:32:36.740] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.EmberBoreBlockEntity was not found recipemachinestage.mixins.json:integration.embers.EmberBoreBlockEntityMixin
+[30Jan2025 14:32:36.740] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/IgnemReactorBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.IgnemReactorBlockEntity)
+[30Jan2025 14:32:36.740] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.IgnemReactorBlockEntity was not found recipemachinestage.mixins.json:integration.embers.IgnemReactorBlockEntityMixin
+[30Jan2025 14:32:36.741] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/MelterBottomBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.MelterBottomBlockEntity)
+[30Jan2025 14:32:36.741] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.MelterBottomBlockEntity was not found recipemachinestage.mixins.json:integration.embers.MelterBottomBlockEntityMixin
+[30Jan2025 14:32:36.741] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/MiniBoilerBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.MiniBoilerBlockEntity)
+[30Jan2025 14:32:36.741] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.MiniBoilerBlockEntity was not found recipemachinestage.mixins.json:integration.embers.MiniBoilerBlockEntityMixin
+[30Jan2025 14:32:36.741] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/MixerCentrifugeBottomBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.MixerCentrifugeBottomBlockEntity)
+[30Jan2025 14:32:36.741] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.MixerCentrifugeBottomBlockEntity was not found recipemachinestage.mixins.json:integration.embers.MixerCentrifugeBottomBlockEntityMixin
+[30Jan2025 14:32:36.742] [main/WARN] [mixin/]: Error loading class: com/rekindled/embers/blockentity/StamperBlockEntity (java.lang.ClassNotFoundException: com.rekindled.embers.blockentity.StamperBlockEntity)
+[30Jan2025 14:32:36.742] [main/WARN] [mixin/]: @Mixin target com.rekindled.embers.blockentity.StamperBlockEntity was not found recipemachinestage.mixins.json:integration.embers.StamperBlockEntityMixin
+[30Jan2025 14:32:36.742] [main/WARN] [mixin/]: Error loading class: favouriteless/enchanted/common/blocks/entity/CauldronBlockEntity (java.lang.ClassNotFoundException: favouriteless.enchanted.common.blocks.entity.CauldronBlockEntity)
+[30Jan2025 14:32:36.742] [main/WARN] [mixin/]: @Mixin target favouriteless.enchanted.common.blocks.entity.CauldronBlockEntity was not found recipemachinestage.mixins.json:integration.enchanted_witch.CauldronBlockEntityMixin
+[30Jan2025 14:32:36.742] [main/WARN] [mixin/]: Error loading class: favouriteless/enchanted/common/blocks/entity/DistilleryBlockEntity (java.lang.ClassNotFoundException: favouriteless.enchanted.common.blocks.entity.DistilleryBlockEntity)
+[30Jan2025 14:32:36.742] [main/WARN] [mixin/]: @Mixin target favouriteless.enchanted.common.blocks.entity.DistilleryBlockEntity was not found recipemachinestage.mixins.json:integration.enchanted_witch.DistilleryBlockEntityMixin
+[30Jan2025 14:32:36.743] [main/WARN] [mixin/]: Error loading class: favouriteless/enchanted/common/blocks/entity/SpinningWheelBlockEntity (java.lang.ClassNotFoundException: favouriteless.enchanted.common.blocks.entity.SpinningWheelBlockEntity)
+[30Jan2025 14:32:36.743] [main/WARN] [mixin/]: @Mixin target favouriteless.enchanted.common.blocks.entity.SpinningWheelBlockEntity was not found recipemachinestage.mixins.json:integration.enchanted_witch.SpinningWheelBlockEntityMixin
+[30Jan2025 14:32:36.743] [main/WARN] [mixin/]: Error loading class: favouriteless/enchanted/common/blocks/entity/WitchOvenBlockEntity (java.lang.ClassNotFoundException: favouriteless.enchanted.common.blocks.entity.WitchOvenBlockEntity)
+[30Jan2025 14:32:36.743] [main/WARN] [mixin/]: @Mixin target favouriteless.enchanted.common.blocks.entity.WitchOvenBlockEntity was not found recipemachinestage.mixins.json:integration.enchanted_witch.WitchOvenBlockEntityMixin
+[30Jan2025 14:32:36.744] [main/WARN] [mixin/]: Error loading class: com/enderio/machines/common/blockentity/task/host/CraftingMachineTaskHost (java.lang.ClassNotFoundException: com.enderio.machines.common.blockentity.task.host.CraftingMachineTaskHost)
+[30Jan2025 14:32:36.744] [main/WARN] [mixin/]: @Mixin target com.enderio.machines.common.blockentity.task.host.CraftingMachineTaskHost was not found recipemachinestage.mixins.json:integration.enderio.CraftingMachineTaskHostMixin
+[30Jan2025 14:32:36.744] [main/WARN] [mixin/]: Error loading class: org/cyclops/evilcraft/blockentity/BlockEntityBloodInfuser (java.lang.ClassNotFoundException: org.cyclops.evilcraft.blockentity.BlockEntityBloodInfuser)
+[30Jan2025 14:32:36.744] [main/WARN] [mixin/]: @Mixin target org.cyclops.evilcraft.blockentity.BlockEntityBloodInfuser was not found recipemachinestage.mixins.json:integration.evilcraft.BlockEntityBloodInfuserMixin
+[30Jan2025 14:32:36.744] [main/WARN] [mixin/]: Error loading class: org/cyclops/evilcraft/blockentity/BlockEntitySanguinaryEnvironmentalAccumulator (java.lang.ClassNotFoundException: org.cyclops.evilcraft.blockentity.BlockEntitySanguinaryEnvironmentalAccumulator)
+[30Jan2025 14:32:36.744] [main/WARN] [mixin/]: @Mixin target org.cyclops.evilcraft.blockentity.BlockEntitySanguinaryEnvironmentalAccumulator was not found recipemachinestage.mixins.json:integration.evilcraft.BlockEntitySanguinaryEnvironmentalAccumulatorMixin
+[30Jan2025 14:32:36.746] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/tileentity/AutoTableTileEntity (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.tileentity.AutoTableTileEntity)
+[30Jan2025 14:32:36.746] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.tileentity.AutoTableTileEntity was not found recipemachinestage.mixins.json:integration.extendedcrafting.AutoTableTileEntityMixin
+[30Jan2025 14:32:36.746] [main/WARN] [mixin/]: Error loading class: com/blakebr0/cucumber/tileentity/BaseInventoryTileEntity (java.lang.ClassNotFoundException: com.blakebr0.cucumber.tileentity.BaseInventoryTileEntity)
+[30Jan2025 14:32:36.746] [main/WARN] [mixin/]: @Mixin target com.blakebr0.cucumber.tileentity.BaseInventoryTileEntity was not found recipemachinestage.mixins.json:integration.extendedcrafting.BaseInventoryTileEntityMixin
+[30Jan2025 14:32:36.747] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/tileentity/CompressorTileEntity (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.tileentity.CompressorTileEntity)
+[30Jan2025 14:32:36.747] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.tileentity.CompressorTileEntity was not found recipemachinestage.mixins.json:integration.extendedcrafting.CompressorTileEntityMixin
+[30Jan2025 14:32:36.747] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/tileentity/CraftingCoreTileEntity (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.tileentity.CraftingCoreTileEntity)
+[30Jan2025 14:32:36.747] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.tileentity.CraftingCoreTileEntity was not found recipemachinestage.mixins.json:integration.extendedcrafting.CraftingCoreTileEntityMixin
+[30Jan2025 14:32:36.747] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/tileentity/EnderCrafterTileEntity (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.tileentity.EnderCrafterTileEntity)
+[30Jan2025 14:32:36.747] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.tileentity.EnderCrafterTileEntity was not found recipemachinestage.mixins.json:integration.extendedcrafting.EnderCrafterTileEntityMixin
+[30Jan2025 14:32:36.748] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/tileentity/FluxCrafterTileEntity (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.tileentity.FluxCrafterTileEntity)
+[30Jan2025 14:32:36.748] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.tileentity.FluxCrafterTileEntity was not found recipemachinestage.mixins.json:integration.extendedcrafting.FluxCrafterTileEntityMixin
+[30Jan2025 14:32:36.748] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/tileentity/AutoTableTileEntity$WrappedRecipe (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.tileentity.AutoTableTileEntity$WrappedRecipe)
+[30Jan2025 14:32:36.748] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.tileentity.AutoTableTileEntity$WrappedRecipe was not found recipemachinestage.mixins.json:integration.extendedcrafting.WrappedRecipeMixin
+[30Jan2025 14:32:36.749] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/container/AdvancedTableContainer (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.container.AdvancedTableContainer)
+[30Jan2025 14:32:36.749] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.container.AdvancedTableContainer was not found recipemachinestage.mixins.json:integration.extendedcrafting.container.AdvancedTableContainerMixin
+[30Jan2025 14:32:36.749] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/container/BasicTableContainer (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.container.BasicTableContainer)
+[30Jan2025 14:32:36.749] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.container.BasicTableContainer was not found recipemachinestage.mixins.json:integration.extendedcrafting.container.BasicTableContainerMixin
+[30Jan2025 14:32:36.749] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/container/EliteTableContainer (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.container.EliteTableContainer)
+[30Jan2025 14:32:36.749] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.container.EliteTableContainer was not found recipemachinestage.mixins.json:integration.extendedcrafting.container.EliteTableContainerMixin
+[30Jan2025 14:32:36.750] [main/WARN] [mixin/]: Error loading class: com/blakebr0/extendedcrafting/container/UltimateTableContainer (java.lang.ClassNotFoundException: com.blakebr0.extendedcrafting.container.UltimateTableContainer)
+[30Jan2025 14:32:36.750] [main/WARN] [mixin/]: @Mixin target com.blakebr0.extendedcrafting.container.UltimateTableContainer was not found recipemachinestage.mixins.json:integration.extendedcrafting.container.UltimateTableContainerMixin
+[30Jan2025 14:32:36.753] [main/WARN] [mixin/]: Error loading class: com/gregtechceu/gtceu/api/machine/trait/RecipeLogic (java.lang.ClassNotFoundException: com.gregtechceu.gtceu.api.machine.trait.RecipeLogic)
+[30Jan2025 14:32:36.753] [main/WARN] [mixin/]: @Mixin target com.gregtechceu.gtceu.api.machine.trait.RecipeLogic was not found recipemachinestage.mixins.json:integration.gregtech.RecipeLogicMixin
+[30Jan2025 14:32:36.753] [main/WARN] [mixin/]: Error loading class: com/buuz135/industrial/block/core/tile/DissolutionChamberTile (java.lang.ClassNotFoundException: com.buuz135.industrial.block.core.tile.DissolutionChamberTile)
+[30Jan2025 14:32:36.753] [main/WARN] [mixin/]: @Mixin target com.buuz135.industrial.block.core.tile.DissolutionChamberTile was not found recipemachinestage.mixins.json:integration.industrial_foregoing.DissolutionChamberTileMixin
+[30Jan2025 14:32:36.754] [main/WARN] [mixin/]: Error loading class: com/buuz135/industrial/block/core/tile/FluidExtractorTile (java.lang.ClassNotFoundException: com.buuz135.industrial.block.core.tile.FluidExtractorTile)
+[30Jan2025 14:32:36.754] [main/WARN] [mixin/]: @Mixin target com.buuz135.industrial.block.core.tile.FluidExtractorTile was not found recipemachinestage.mixins.json:integration.industrial_foregoing.FluidExtractorTileMixin
+[30Jan2025 14:32:36.754] [main/WARN] [mixin/]: Error loading class: com/buuz135/industrial/block/resourceproduction/tile/FluidLaserBaseTile (java.lang.ClassNotFoundException: com.buuz135.industrial.block.resourceproduction.tile.FluidLaserBaseTile)
+[30Jan2025 14:32:36.754] [main/WARN] [mixin/]: @Mixin target com.buuz135.industrial.block.resourceproduction.tile.FluidLaserBaseTile was not found recipemachinestage.mixins.json:integration.industrial_foregoing.FluidLaserBaseTileMixin
+[30Jan2025 14:32:36.755] [main/WARN] [mixin/]: Error loading class: com/buuz135/industrial/block/resourceproduction/tile/OreLaserBaseTile (java.lang.ClassNotFoundException: com.buuz135.industrial.block.resourceproduction.tile.OreLaserBaseTile)
+[30Jan2025 14:32:36.755] [main/WARN] [mixin/]: @Mixin target com.buuz135.industrial.block.resourceproduction.tile.OreLaserBaseTile was not found recipemachinestage.mixins.json:integration.industrial_foregoing.OreLaserBaseTileMixin
+[30Jan2025 14:32:36.755] [main/WARN] [mixin/]: Error loading class: com/sammy/malum/common/block/curiosities/repair_pylon/RepairPylonCoreBlockEntity (java.lang.ClassNotFoundException: com.sammy.malum.common.block.curiosities.repair_pylon.RepairPylonCoreBlockEntity)
+[30Jan2025 14:32:36.755] [main/WARN] [mixin/]: @Mixin target com.sammy.malum.common.block.curiosities.repair_pylon.RepairPylonCoreBlockEntity was not found recipemachinestage.mixins.json:integration.malum.RepairPylonCoreBlockEntityMixin
+[30Jan2025 14:32:36.756] [main/WARN] [mixin/]: Error loading class: com/sammy/malum/common/block/curiosities/runic_workbench/RunicWorkbenchBlockEntity (java.lang.ClassNotFoundException: com.sammy.malum.common.block.curiosities.runic_workbench.RunicWorkbenchBlockEntity)
+[30Jan2025 14:32:36.756] [main/WARN] [mixin/]: @Mixin target com.sammy.malum.common.block.curiosities.runic_workbench.RunicWorkbenchBlockEntity was not found recipemachinestage.mixins.json:integration.malum.RunicWorkbenchBlockEntityMixin
+[30Jan2025 14:32:36.756] [main/WARN] [mixin/]: Error loading class: com/sammy/malum/common/block/curiosities/spirit_altar/SpiritAltarBlockEntity (java.lang.ClassNotFoundException: com.sammy.malum.common.block.curiosities.spirit_altar.SpiritAltarBlockEntity)
+[30Jan2025 14:32:36.756] [main/WARN] [mixin/]: @Mixin target com.sammy.malum.common.block.curiosities.spirit_altar.SpiritAltarBlockEntity was not found recipemachinestage.mixins.json:integration.malum.SpiritAltarBlockEntityMixin
+[30Jan2025 14:32:36.757] [main/WARN] [mixin/]: Error loading class: com/sammy/malum/common/block/curiosities/weeping_well/VoidConduitBlockEntity (java.lang.ClassNotFoundException: com.sammy.malum.common.block.curiosities.weeping_well.VoidConduitBlockEntity)
+[30Jan2025 14:32:36.757] [main/WARN] [mixin/]: @Mixin target com.sammy.malum.common.block.curiosities.weeping_well.VoidConduitBlockEntity was not found recipemachinestage.mixins.json:integration.malum.VoidConduitBlockEntityMixin
+[30Jan2025 14:32:36.757] [main/WARN] [mixin/]: Error loading class: com/lowdragmc/mbd2/api/recipe/RecipeLogic (java.lang.ClassNotFoundException: com.lowdragmc.mbd2.api.recipe.RecipeLogic)
+[30Jan2025 14:32:36.757] [main/WARN] [mixin/]: @Mixin target com.lowdragmc.mbd2.api.recipe.RecipeLogic was not found recipemachinestage.mixins.json:integration.mb2.RecipeLogicMixin
+[30Jan2025 14:32:36.758] [main/WARN] [mixin/]: Error loading class: mekanism/common/recipe/lookup/monitor/RecipeCacheLookupMonitor (java.lang.ClassNotFoundException: mekanism.common.recipe.lookup.monitor.RecipeCacheLookupMonitor)
+[30Jan2025 14:32:36.758] [main/WARN] [mixin/]: @Mixin target mekanism.common.recipe.lookup.monitor.RecipeCacheLookupMonitor was not found recipemachinestage.mixins.json:integration.mekanism.RecipeCacheLookupMonitorMixin
+[30Jan2025 14:32:36.758] [main/WARN] [mixin/]: Error loading class: com/blakebr0/mysticalagriculture/tileentity/InfusionAltarTileEntity (java.lang.ClassNotFoundException: com.blakebr0.mysticalagriculture.tileentity.InfusionAltarTileEntity)
+[30Jan2025 14:32:36.759] [main/WARN] [mixin/]: @Mixin target com.blakebr0.mysticalagriculture.tileentity.InfusionAltarTileEntity was not found recipemachinestage.mixins.json:integration.mysticalagriculture.InfusionAltarTileEntityMixin
+[30Jan2025 14:32:36.759] [main/WARN] [mixin/]: Error loading class: de/ellpeck/naturesaura/blocks/tiles/BlockEntityNatureAltar (java.lang.ClassNotFoundException: de.ellpeck.naturesaura.blocks.tiles.BlockEntityNatureAltar)
+[30Jan2025 14:32:36.759] [main/WARN] [mixin/]: @Mixin target de.ellpeck.naturesaura.blocks.tiles.BlockEntityNatureAltar was not found recipemachinestage.mixins.json:integration.natures_aura.BlockEntityNatureAltarMixin
+[30Jan2025 14:32:36.760] [main/WARN] [mixin/]: Error loading class: de/ellpeck/naturesaura/blocks/tiles/BlockEntityOfferingTable (java.lang.ClassNotFoundException: de.ellpeck.naturesaura.blocks.tiles.BlockEntityOfferingTable)
+[30Jan2025 14:32:36.760] [main/WARN] [mixin/]: @Mixin target de.ellpeck.naturesaura.blocks.tiles.BlockEntityOfferingTable was not found recipemachinestage.mixins.json:integration.natures_aura.BlockEntityOfferingTableMixin
+[30Jan2025 14:32:36.760] [main/WARN] [mixin/]: Error loading class: de/ellpeck/naturesaura/blocks/tiles/BlockEntityWoodStand (java.lang.ClassNotFoundException: de.ellpeck.naturesaura.blocks.tiles.BlockEntityWoodStand)
+[30Jan2025 14:32:36.760] [main/WARN] [mixin/]: @Mixin target de.ellpeck.naturesaura.blocks.tiles.BlockEntityWoodStand was not found recipemachinestage.mixins.json:integration.natures_aura.BlockEntityWoodStandMixin
+[30Jan2025 14:32:36.761] [main/WARN] [mixin/]: Error loading class: com/klikli_dev/occultism/common/blockentity/DimensionalMineshaftBlockEntity (java.lang.ClassNotFoundException: com.klikli_dev.occultism.common.blockentity.DimensionalMineshaftBlockEntity)
+[30Jan2025 14:32:36.761] [main/WARN] [mixin/]: @Mixin target com.klikli_dev.occultism.common.blockentity.DimensionalMineshaftBlockEntity was not found recipemachinestage.mixins.json:integration.occultism.DimensionalMineshaftBlockEntityMixin
+[30Jan2025 14:32:36.761] [main/WARN] [mixin/]: Error loading class: com/klikli_dev/occultism/common/blockentity/GoldenSacrificialBowlBlockEntity (java.lang.ClassNotFoundException: com.klikli_dev.occultism.common.blockentity.GoldenSacrificialBowlBlockEntity)
+[30Jan2025 14:32:36.761] [main/WARN] [mixin/]: @Mixin target com.klikli_dev.occultism.common.blockentity.GoldenSacrificialBowlBlockEntity was not found recipemachinestage.mixins.json:integration.occultism.GoldenSacrificialBowlBlockEntityMixin
+[30Jan2025 14:32:36.762] [main/WARN] [mixin/]: Error loading class: owmii/powah/block/energizing/EnergizingOrbTile (java.lang.ClassNotFoundException: owmii.powah.block.energizing.EnergizingOrbTile)
+[30Jan2025 14:32:36.762] [main/WARN] [mixin/]: @Mixin target owmii.powah.block.energizing.EnergizingOrbTile was not found recipemachinestage.mixins.json:integration.powah.EnergizingOrbTileMixin
+[30Jan2025 14:32:36.762] [main/WARN] [mixin/]: Error loading class: mods/railcraft/world/module/CookingModule (java.lang.ClassNotFoundException: mods.railcraft.world.module.CookingModule)
+[30Jan2025 14:32:36.762] [main/WARN] [mixin/]: @Mixin target mods.railcraft.world.module.CookingModule was not found recipemachinestage.mixins.json:integration.railcraft.CookingModuleMixin
+[30Jan2025 14:32:36.763] [main/WARN] [mixin/]: Error loading class: mods/railcraft/world/module/CrusherModule (java.lang.ClassNotFoundException: mods.railcraft.world.module.CrusherModule)
+[30Jan2025 14:32:36.763] [main/WARN] [mixin/]: @Mixin target mods.railcraft.world.module.CrusherModule was not found recipemachinestage.mixins.json:integration.railcraft.CrusherModuleMixin
+[30Jan2025 14:32:36.763] [main/WARN] [mixin/]: Error loading class: mods/railcraft/world/level/block/entity/ManualRollingMachineBlockEntity (java.lang.ClassNotFoundException: mods.railcraft.world.level.block.entity.ManualRollingMachineBlockEntity)
+[30Jan2025 14:32:36.763] [main/WARN] [mixin/]: @Mixin target mods.railcraft.world.level.block.entity.ManualRollingMachineBlockEntity was not found recipemachinestage.mixins.json:integration.railcraft.ManualRollingMachineBlockEntityMixin
+[30Jan2025 14:32:36.763] [main/WARN] [mixin/]: Error loading class: cofh/thermal/lib/common/block/entity/MachineBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.lib.common.block.entity.MachineBlockEntity)
+[30Jan2025 14:32:36.763] [main/WARN] [mixin/]: @Mixin target cofh.thermal.lib.common.block.entity.MachineBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineBlockEntityAccessor
+[30Jan2025 14:32:36.764] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineBottlerBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineBottlerBlockEntity)
+[30Jan2025 14:32:36.764] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineBottlerBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineBottlerBlockEntityMixin
+[30Jan2025 14:32:36.764] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineBrewerBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineBrewerBlockEntity)
+[30Jan2025 14:32:36.764] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineBrewerBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineBrewerBlockEntityMixin
+[30Jan2025 14:32:36.764] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineCentrifugeBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineCentrifugeBlockEntity)
+[30Jan2025 14:32:36.764] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineCentrifugeBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineCentrifugeBlockEntityMixin
+[30Jan2025 14:32:36.765] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineChillerBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineChillerBlockEntity)
+[30Jan2025 14:32:36.765] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineChillerBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineChillerBlockEntityMixin
+[30Jan2025 14:32:36.765] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineCrafterBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineCrafterBlockEntity)
+[30Jan2025 14:32:36.765] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineCrafterBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineCrafterBlockEntityMixin
+[30Jan2025 14:32:36.766] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineCrucibleBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineCrucibleBlockEntity)
+[30Jan2025 14:32:36.766] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineCrucibleBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineCrucibleBlockEntityMixin
+[30Jan2025 14:32:36.766] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineCrystallizerBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineCrystallizerBlockEntity)
+[30Jan2025 14:32:36.766] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineCrystallizerBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineCrystallizerBlockEntityMixin
+[30Jan2025 14:32:36.766] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineFurnaceBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineFurnaceBlockEntity)
+[30Jan2025 14:32:36.766] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineFurnaceBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineFurnaceBlockEntityMixin
+[30Jan2025 14:32:36.767] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineInsolatorBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineInsolatorBlockEntity)
+[30Jan2025 14:32:36.767] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineInsolatorBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineInsolatorBlockEntityMixin
+[30Jan2025 14:32:36.767] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachinePressBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachinePressBlockEntity)
+[30Jan2025 14:32:36.767] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachinePressBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachinePressBlockEntityMixin
+[30Jan2025 14:32:36.767] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachinePulverizerBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachinePulverizerBlockEntity)
+[30Jan2025 14:32:36.767] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachinePulverizerBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachinePulverizerBlockEntityMixin
+[30Jan2025 14:32:36.768] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachinePyrolyzerBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachinePyrolyzerBlockEntity)
+[30Jan2025 14:32:36.768] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachinePyrolyzerBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachinePyrolyzerBlockEntityMixin
+[30Jan2025 14:32:36.768] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineRefineryBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineRefineryBlockEntity)
+[30Jan2025 14:32:36.768] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineRefineryBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineRefineryBlockEntityMixin
+[30Jan2025 14:32:36.769] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineSawmillBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineSawmillBlockEntity)
+[30Jan2025 14:32:36.769] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineSawmillBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineSawmillBlockEntityMixin
+[30Jan2025 14:32:36.769] [main/WARN] [mixin/]: Error loading class: cofh/thermal/expansion/common/block/entity/machine/MachineSmelterBlockEntity (java.lang.ClassNotFoundException: cofh.thermal.expansion.common.block.entity.machine.MachineSmelterBlockEntity)
+[30Jan2025 14:32:36.769] [main/WARN] [mixin/]: @Mixin target cofh.thermal.expansion.common.block.entity.machine.MachineSmelterBlockEntity was not found recipemachinestage.mixins.json:integration.thermal.machines.MachineSmelterBlockEntityMixin
+[30Jan2025 14:32:36.769] [main/WARN] [mixin/]: Error loading class: cofh/thermal/lib/util/managers/SingleItemFuelManager (java.lang.ClassNotFoundException: cofh.thermal.lib.util.managers.SingleItemFuelManager)
+[30Jan2025 14:32:36.769] [main/WARN] [mixin/]: @Mixin target cofh.thermal.lib.util.managers.SingleItemFuelManager was not found recipemachinestage.mixins.json:integration.thermal.manager.SingleItemFuelManagerMixin
+[30Jan2025 14:32:36.770] [main/WARN] [mixin/]: Error loading class: cofh/thermal/lib/util/managers/SingleItemRecipeManager (java.lang.ClassNotFoundException: cofh.thermal.lib.util.managers.SingleItemRecipeManager)
+[30Jan2025 14:32:36.770] [main/WARN] [mixin/]: @Mixin target cofh.thermal.lib.util.managers.SingleItemRecipeManager was not found recipemachinestage.mixins.json:integration.thermal.manager.SingleItemRecipeManagerMixin
+[30Jan2025 14:32:36.770] [main/WARN] [mixin/]: Error loading class: cofh/thermal/lib/util/recipes/internal/BaseDynamoFuel (java.lang.ClassNotFoundException: cofh.thermal.lib.util.recipes.internal.BaseDynamoFuel)
+[30Jan2025 14:32:36.770] [main/WARN] [mixin/]: @Mixin target cofh.thermal.lib.util.recipes.internal.BaseDynamoFuel was not found recipemachinestage.mixins.json:integration.thermal.recipe.BaseDynamoFuelMixin
+[30Jan2025 14:32:36.771] [main/WARN] [mixin/]: Error loading class: cofh/thermal/lib/util/recipes/internal/BaseMachineCatalyst (java.lang.ClassNotFoundException: cofh.thermal.lib.util.recipes.internal.BaseMachineCatalyst)
+[30Jan2025 14:32:36.771] [main/WARN] [mixin/]: @Mixin target cofh.thermal.lib.util.recipes.internal.BaseMachineCatalyst was not found recipemachinestage.mixins.json:integration.thermal.recipe.BaseMachineCatalystMixin
+[30Jan2025 14:32:36.771] [main/WARN] [mixin/]: Error loading class: cofh/thermal/lib/util/recipes/internal/BaseMachineRecipe (java.lang.ClassNotFoundException: cofh.thermal.lib.util.recipes.internal.BaseMachineRecipe)
+[30Jan2025 14:32:36.771] [main/WARN] [mixin/]: @Mixin target cofh.thermal.lib.util.recipes.internal.BaseMachineRecipe was not found recipemachinestage.mixins.json:integration.thermal.recipe.BaseMachineRecipeMixin
+[30Jan2025 14:32:36.771] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/tools/modules/MeltingModule (java.lang.ClassNotFoundException: slimeknights.tconstruct.tools.modules.MeltingModule)
+[30Jan2025 14:32:36.771] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.tools.modules.MeltingModule was not found recipemachinestage.mixins.json:integration.tinkers_construct.MeltingModuleMixin
+[30Jan2025 14:32:36.772] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/tables/block/entity/table/ModifierWorktableBlockEntity (java.lang.ClassNotFoundException: slimeknights.tconstruct.tables.block.entity.table.ModifierWorktableBlockEntity)
+[30Jan2025 14:32:36.772] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.tables.block.entity.table.ModifierWorktableBlockEntity was not found recipemachinestage.mixins.json:integration.tinkers_construct.ModifierWorktableBlockEntityMixin
+[30Jan2025 14:32:36.772] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/tables/block/entity/table/PartBuilderBlockEntity (java.lang.ClassNotFoundException: slimeknights.tconstruct.tables.block.entity.table.PartBuilderBlockEntity)
+[30Jan2025 14:32:36.772] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.tables.block.entity.table.PartBuilderBlockEntity was not found recipemachinestage.mixins.json:integration.tinkers_construct.PartBuilderBlockEntityMixin
+[30Jan2025 14:32:36.773] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/tables/block/entity/table/TinkerStationBlockEntity (java.lang.ClassNotFoundException: slimeknights.tconstruct.tables.block.entity.table.TinkerStationBlockEntity)
+[30Jan2025 14:32:36.773] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.tables.block.entity.table.TinkerStationBlockEntity was not found recipemachinestage.mixins.json:integration.tinkers_construct.TinkerStationBlockEntityMixin
+[30Jan2025 14:32:36.773] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/smeltery/block/entity/module/EntityMeltingModule (java.lang.ClassNotFoundException: slimeknights.tconstruct.smeltery.block.entity.module.EntityMeltingModule)
+[30Jan2025 14:32:36.773] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.smeltery.block.entity.module.EntityMeltingModule was not found recipemachinestage.mixins.json:integration.tinkers_construct.modules.EntityMeltingModuleMixin
+[30Jan2025 14:32:36.773] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/smeltery/block/entity/module/FuelModule (java.lang.ClassNotFoundException: slimeknights.tconstruct.smeltery.block.entity.module.FuelModule)
+[30Jan2025 14:32:36.773] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.smeltery.block.entity.module.FuelModule was not found recipemachinestage.mixins.json:integration.tinkers_construct.modules.FuelModuleMixin
+[30Jan2025 14:32:36.774] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/smeltery/block/entity/module/MeltingModule (java.lang.ClassNotFoundException: slimeknights.tconstruct.smeltery.block.entity.module.MeltingModule)
+[30Jan2025 14:32:36.774] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.smeltery.block.entity.module.MeltingModule was not found recipemachinestage.mixins.json:integration.tinkers_construct.modules.MeltingModuleMixin
+[30Jan2025 14:32:36.774] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/smeltery/block/entity/module/alloying/MultiAlloyingModule (java.lang.ClassNotFoundException: slimeknights.tconstruct.smeltery.block.entity.module.alloying.MultiAlloyingModule)
+[30Jan2025 14:32:36.774] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.smeltery.block.entity.module.alloying.MultiAlloyingModule was not found recipemachinestage.mixins.json:integration.tinkers_construct.modules.MultiAlloyingModuleMixin
+[30Jan2025 14:32:36.775] [main/WARN] [mixin/]: Error loading class: slimeknights/tconstruct/smeltery/block/entity/module/alloying/SingleAlloyingModule (java.lang.ClassNotFoundException: slimeknights.tconstruct.smeltery.block.entity.module.alloying.SingleAlloyingModule)
+[30Jan2025 14:32:36.775] [main/WARN] [mixin/]: @Mixin target slimeknights.tconstruct.smeltery.block.entity.module.alloying.SingleAlloyingModule was not found recipemachinestage.mixins.json:integration.tinkers_construct.modules.SingleAlloyingModuleMixin
+[30Jan2025 14:32:36.842] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/common/ConfigCommon (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.common.ConfigCommon)
+[30Jan2025 14:32:36.843] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:36.843] [main/WARN] [mixin/]: @Mixin target com.firemerald.additionalplacements.block.AdditionalPlacementBlock was not found copycats-common.mixins.json:compat.additionalplacements.PlacementBlockMixin
+[30Jan2025 14:32:36.848] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/lithium/common/ai/pathing/PathNodeDefaults (java.lang.ClassNotFoundException: me.jellysquid.mods.lithium.common.ai.pathing.PathNodeDefaults)
+[30Jan2025 14:32:36.849] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/render/chunk/compile/pipeline/BlockOcclusionCache (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.render.chunk.compile.pipeline.BlockOcclusionCache)
+[30Jan2025 14:32:36.849] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/render/chunk/compile/pipeline/BlockRenderer (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.render.chunk.compile.pipeline.BlockRenderer)
+[30Jan2025 14:32:36.925] [main/WARN] [mixin/]: Error loading class: cjminecraft/doubleslabs/common/config/DSConfig$Common (java.lang.ClassNotFoundException: cjminecraft.doubleslabs.common.config.DSConfig$Common)
+[30Jan2025 14:32:37.224] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class com/minecolonies/core/compatibility/jei/GenericRecipeCategory for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:37.224] [main/WARN] [mixin/]: Error loading class: com/minecolonies/core/compatibility/jei/GenericRecipeCategory (java.lang.RuntimeException: Attempted to load class com/minecolonies/core/compatibility/jei/GenericRecipeCategory for invalid dist DEDICATED_SERVER)
+[30Jan2025 14:32:37.224] [main/WARN] [mixin/]: @Mixin target com.minecolonies.core.compatibility.jei.GenericRecipeCategory was not found minecolonies_compatibility.mixin.common.json:minecolonies.GenericRecipeCategoryMixin
+[30Jan2025 14:32:37.230] [main/WARN] [mixin/]: Error loading class: com/legacy/blue_skies/blocks/natural/BrewberryBushBlock (java.lang.ClassNotFoundException: com.legacy.blue_skies.blocks.natural.BrewberryBushBlock)
+[30Jan2025 14:32:37.230] [main/WARN] [mixin/]: @Mixin target com.legacy.blue_skies.blocks.natural.BrewberryBushBlock was not found minecolonies_compatibility.mixin.common.json:blue_skies.BrewberryBushBlockAccessor
+[30Jan2025 14:32:37.230] [main/WARN] [mixin/]: Error loading class: com/lance5057/butchercraft/workstations/butcherblock/ButcherBlockBlockEntity (java.lang.ClassNotFoundException: com.lance5057.butchercraft.workstations.butcherblock.ButcherBlockBlockEntity)
+[30Jan2025 14:32:37.231] [main/WARN] [mixin/]: @Mixin target com.lance5057.butchercraft.workstations.butcherblock.ButcherBlockBlockEntity was not found minecolonies_compatibility.mixin.common.json:butchercraft.ButcherBlockBlockEntityAccessor
+[30Jan2025 14:32:37.231] [main/WARN] [mixin/]: Error loading class: com/lance5057/butchercraft/workstations/hook/MeatHookBlockEntity (java.lang.ClassNotFoundException: com.lance5057.butchercraft.workstations.hook.MeatHookBlockEntity)
+[30Jan2025 14:32:37.231] [main/WARN] [mixin/]: @Mixin target com.lance5057.butchercraft.workstations.hook.MeatHookBlockEntity was not found minecolonies_compatibility.mixin.common.json:butchercraft.MeatHookBlockEntityAccessor
+[30Jan2025 14:32:37.232] [main/WARN] [mixin/]: Error loading class: com/cobblemon/mod/common/block/BerryBlock (java.lang.ClassNotFoundException: com.cobblemon.mod.common.block.BerryBlock)
+[30Jan2025 14:32:37.232] [main/WARN] [mixin/]: @Mixin target com.cobblemon.mod.common.block.BerryBlock was not found minecolonies_compatibility.mixin.common.json:cobblemon.BerryBlockAccessor
+[30Jan2025 14:32:37.232] [main/WARN] [mixin/]: Error loading class: com/lothrazar/cyclic/block/apple/AppleCropBlock (java.lang.ClassNotFoundException: com.lothrazar.cyclic.block.apple.AppleCropBlock)
+[30Jan2025 14:32:37.232] [main/WARN] [mixin/]: @Mixin target com.lothrazar.cyclic.block.apple.AppleCropBlock was not found minecolonies_compatibility.mixin.common.json:cyclic.AppleCropBlockAccessor
+[30Jan2025 14:32:37.233] [main/WARN] [mixin/]: Error loading class: com/mrbysco/oreberriesreplanted/block/OreBerryBushBlock (java.lang.ClassNotFoundException: com.mrbysco.oreberriesreplanted.block.OreBerryBushBlock)
+[30Jan2025 14:32:37.233] [main/WARN] [mixin/]: @Mixin target com.mrbysco.oreberriesreplanted.block.OreBerryBushBlock was not found minecolonies_compatibility.mixin.common.json:oreberries.OreBerryBushBlockAccessor
+[30Jan2025 14:32:37.233] [main/WARN] [mixin/]: Error loading class: reliquary/items/HandgunItem (java.lang.ClassNotFoundException: reliquary.items.HandgunItem)
+[30Jan2025 14:32:37.233] [main/WARN] [mixin/]: @Mixin target reliquary.items.HandgunItem was not found minecolonies_compatibility.mixin.common.json:reliquary.HandgunItemAccessor
+[30Jan2025 14:32:37.233] [main/WARN] [mixin/]: Error loading class: reliquary/entities/shot/NeutralShotEntity (java.lang.ClassNotFoundException: reliquary.entities.shot.NeutralShotEntity)
+[30Jan2025 14:32:37.233] [main/WARN] [mixin/]: @Mixin target reliquary.entities.shot.NeutralShotEntity was not found minecolonies_compatibility.mixin.common.json:reliquary.NeutralShotEntityMixin
+[30Jan2025 14:32:37.234] [main/WARN] [mixin/]: Error loading class: com/lothrazar/storagenetwork/block/main/NetworkModule (java.lang.ClassNotFoundException: com.lothrazar.storagenetwork.block.main.NetworkModule)
+[30Jan2025 14:32:37.234] [main/WARN] [mixin/]: @Mixin target com.lothrazar.storagenetwork.block.main.NetworkModule was not found minecolonies_compatibility.mixin.common.json:storagenetwork.NetworkModuleAccessor
+[30Jan2025 14:32:37.234] [main/WARN] [mixin/]: Error loading class: com/lothrazar/storagenetwork/util/UtilConnections (java.lang.ClassNotFoundException: com.lothrazar.storagenetwork.util.UtilConnections)
+[30Jan2025 14:32:37.234] [main/WARN] [mixin/]: @Mixin target com.lothrazar.storagenetwork.util.UtilConnections was not found minecolonies_compatibility.mixin.common.json:storagenetwork.UtilConnectionsMixin
+[30Jan2025 14:32:37.234] [main/WARN] [mixin/]: Error loading class: cofh/lib/common/block/CropBlockCoFH (java.lang.ClassNotFoundException: cofh.lib.common.block.CropBlockCoFH)
+[30Jan2025 14:32:37.234] [main/WARN] [mixin/]: @Mixin target cofh.lib.common.block.CropBlockCoFH was not found minecolonies_compatibility.mixin.common.json:thermal.CropBlockCoFHAccessor
+[30Jan2025 14:32:37.263] [main/WARN] [mixin/]: Error loading class: dan200/computercraft/shared/integration/MoreRedIntegration (java.lang.ClassNotFoundException: dan200.computercraft.shared.integration.MoreRedIntegration)
+[30Jan2025 14:32:37.263] [main/WARN] [mixin/]: @Mixin target dan200.computercraft.shared.integration.MoreRedIntegration was not found create_central_kitchen.mixins.json:common.computercraft.MoreRedIntegrationMixin
+[30Jan2025 14:32:37.291] [main/WARN] [mixin/]: Error loading class: com/sammy/minersdelight/content/block/copper_pot/CopperPotBlockEntity (java.lang.ClassNotFoundException: com.sammy.minersdelight.content.block.copper_pot.CopperPotBlockEntity)
+[30Jan2025 14:32:37.291] [main/WARN] [mixin/]: @Mixin target com.sammy.minersdelight.content.block.copper_pot.CopperPotBlockEntity was not found create_central_kitchen.mixins.json:common.minersdelight.CopperPotBlockEntityMixin
+[30Jan2025 14:32:37.291] [main/WARN] [mixin/]: Error loading class: com/sammy/minersdelight/content/block/sticky_basket/StickyBasketBlockEntity (java.lang.ClassNotFoundException: com.sammy.minersdelight.content.block.sticky_basket.StickyBasketBlockEntity)
+[30Jan2025 14:32:37.291] [main/WARN] [mixin/]: @Mixin target com.sammy.minersdelight.content.block.sticky_basket.StickyBasketBlockEntity was not found create_central_kitchen.mixins.json:common.minersdelight.StickyBasketBlockEntityAccessor
+[30Jan2025 14:32:37.292] [main/WARN] [mixin/]: Error loading class: com/sammy/minersdelight/content/block/sticky_basket/StickyBasketBlockEntity (java.lang.ClassNotFoundException: com.sammy.minersdelight.content.block.sticky_basket.StickyBasketBlockEntity)
+[30Jan2025 14:32:37.292] [main/WARN] [mixin/]: @Mixin target com.sammy.minersdelight.content.block.sticky_basket.StickyBasketBlockEntity was not found create_central_kitchen.mixins.json:common.minersdelight.StickyBasketBlockEntityMixin
+[30Jan2025 14:32:37.292] [main/WARN] [mixin/]: Error loading class: net/orcinus/overweightfarming/blocks/CropFullBlock (java.lang.ClassNotFoundException: net.orcinus.overweightfarming.blocks.CropFullBlock)
+[30Jan2025 14:32:37.292] [main/WARN] [mixin/]: @Mixin target net.orcinus.overweightfarming.blocks.CropFullBlock was not found create_central_kitchen.mixins.json:common.overweightfarming.CropFullBlockMixin
+[30Jan2025 14:32:37.369] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:37.370] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:37.429] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[30Jan2025 14:32:38.763] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:38.800] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:38.871] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:38.879] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:38.881] [main/WARN] [mixin/]: Error loading class: com/firemerald/additionalplacements/block/AdditionalPlacementBlock (java.lang.ClassNotFoundException: com.firemerald.additionalplacements.block.AdditionalPlacementBlock)
+[30Jan2025 14:32:41.326] [modloading-worker-0/INFO] [com.leclowndu93150.corpsecurioscompat.Main/]: Hello from Gravestone Curios Compat!
+[30Jan2025 14:32:41.328] [modloading-worker-0/INFO] [plus.dragons.createdragonlib.DragonLib/]: Create: Dragon Lib 1.4.3 has initialized, ready to support your Create add-ons!
+[30Jan2025 14:32:41.346] [modloading-worker-0/INFO] [scena-forge/]: Initialized scena-forge
+[30Jan2025 14:32:41.373] [modloading-worker-0/INFO] [create_new_age/]: Hello 1.20.1 Create!
+[30Jan2025 14:32:41.433] [modloading-worker-0/WARN] [mixin/]: @Inject(@At("INVOKE")) Shift.BY=2 on pufferfish_unofficial_additions.mixins.json:LootTableMixin::handler$cch000$pufferfish_unofficial_additions$applyExperienceSource exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[30Jan2025 14:32:41.440] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:pufferfish_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.441] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:salmon_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.442] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:cod_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.442] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:tropical_fish_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.442] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:axolotl_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.442] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:powder_snow_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.443] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:tadpole_bucket is now minecraft:bucket.
+[30Jan2025 14:32:41.444] [modloading-worker-0/INFO] [io.github.apace100.origins.Origins/]: Origins 1.20.1-1.10.0.9 is initializing. Have fun!
+[30Jan2025 14:32:41.494] [modloading-worker-0/INFO] [com.cupboard.Cupboard/]: Loaded config for: cupboard.json
+[30Jan2025 14:32:41.574] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[30Jan2025 14:32:41.588] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftblibrary:edit_nbt_response
+[30Jan2025 14:32:41.649] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:open_gui
+[30Jan2025 14:32:41.660] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:update_settings
+[30Jan2025 14:32:41.756] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:send_message
+[30Jan2025 14:32:41.804] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:create_party
+[30Jan2025 14:32:41.865] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:player_gui_operation
+[30Jan2025 14:32:42.051] [modloading-worker-0/INFO] [KubeJS/]: Loaded common.properties
+[30Jan2025 14:32:42.053] [modloading-worker-0/INFO] [KubeJS/]: Loaded dev.properties
+[30Jan2025 14:32:42.061] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
+[30Jan2025 14:32:42.068] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
+[30Jan2025 14:32:42.077] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin does not load on server side, skipping
+[30Jan2025 14:32:42.088] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id itemfilters:main/14e7fa1454283aec8ae811ef844ada28
+[30Jan2025 14:32:42.108] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id itemfilters:main/8f6a899247753217b9d86ab427a2b279
+[30Jan2025 14:32:42.125] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
+[30Jan2025 14:32:42.125] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
+[30Jan2025 14:32:42.194] [modloading-worker-0/INFO] [Railways/]: Steam 'n' Rails v1.6.7 initializing! Commit hash: 0a7cc000d6c7a1419919bc3e315bc62932287eb9 on Create version: 0.5.1j on platform: Forge
+[30Jan2025 14:32:42.205] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source ftbxmodcompat
+[30Jan2025 14:32:42.212] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.ftb.mods.ftbxmodcompat.ftbchunks.kubejs.FTBChunksKubeJSPlugin does not have required mod ftbchunks loaded, skipping
+[30Jan2025 14:32:42.213] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.ftb.mods.ftbxmodcompat.ftbfiltersystem.kubejs.FFSKubeJSPlugin does not have required mod ftbfiltersystem loaded, skipping
+[30Jan2025 14:32:42.213] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source irons_spells_js
+[30Jan2025 14:32:42.278] [modloading-worker-0/INFO] [Calio/]: Calio 1.20.1-1.11.0.5 initializing...
+[30Jan2025 14:32:42.299] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/42a7ad70b1cc371599a0eff744096b8a
+[30Jan2025 14:32:42.305] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/74a5e841822a3a87854ae896a33430d6
+[30Jan2025 14:32:42.309] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/eb3d1e2748533430848cadf0f37c7e9c
+[30Jan2025 14:32:42.310] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/91c8520f19f93b3e8b6a727568e194ab
+[30Jan2025 14:32:42.314] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/8c2784d778293fd482ed84b8aa5fedb9
+[30Jan2025 14:32:42.317] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/ea038224ea783d40b2863f52239e2604
+[30Jan2025 14:32:42.326] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id artifacts:networking_channel/97ad64b7ecaf33209991c4f031501a58
+[30Jan2025 14:32:42.338] [modloading-worker-0/INFO] [Lexiconfig/]: Shelved lexicon com.codinglitch.vibrativevoice.VibrativeVoiceConfig@40e77351!
+[30Jan2025 14:32:42.373] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id magistuarmory:packet_long_reach_attack
+[30Jan2025 14:32:42.374] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id magistuarmory:packet_lance_collision
+[30Jan2025 14:32:42.380] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:submit_task
+[30Jan2025 14:32:42.380] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:claim_reward
+[30Jan2025 14:32:42.382] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:get_emergency_items
+[30Jan2025 14:32:42.384] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:claim_all_rewards
+[30Jan2025 14:32:42.385] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:claim_choice_reward
+[30Jan2025 14:32:42.390] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:toggle_pinned
+[30Jan2025 14:32:42.399] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:toggle_chapter_pinned
+[30Jan2025 14:32:42.400] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:toggle_editing_mode
+[30Jan2025 14:32:42.400] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:force_save
+[30Jan2025 14:32:42.410] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:set_custom_image
+[30Jan2025 14:32:42.418] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:task_screen_config_resp
+[30Jan2025 14:32:42.421] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:change_progress
+[30Jan2025 14:32:42.422] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:create_object
+[30Jan2025 14:32:42.428] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:create_task_at
+[30Jan2025 14:32:42.429] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:delete_object
+[30Jan2025 14:32:42.431] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:edit_object
+[30Jan2025 14:32:42.432] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:move_chapter
+[30Jan2025 14:32:42.433] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:move_quest
+[30Jan2025 14:32:42.434] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:change_chapter_group
+[30Jan2025 14:32:42.436] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:move_chapter_group
+[30Jan2025 14:32:42.440] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:copy_quest
+[30Jan2025 14:32:42.443] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:copy_chapter_image
+[30Jan2025 14:32:42.443] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Warped Netherlands
+[30Jan2025 14:32:42.443] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Stalactite Caves
+[30Jan2025 14:32:42.444] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Space Wars
+[30Jan2025 14:32:42.444] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Shire
+[30Jan2025 14:32:42.444] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Desert Oasis
+[30Jan2025 14:32:42.444] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Pagoda
+[30Jan2025 14:32:42.444] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Minecolonies Original
+[30Jan2025 14:32:42.445] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Nordic Spruce
+[30Jan2025 14:32:42.445] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Spruce
+[30Jan2025 14:32:42.445] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Oak
+[30Jan2025 14:32:42.445] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Dark Oak
+[30Jan2025 14:32:42.446] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Birch
+[30Jan2025 14:32:42.446] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Lost Mesa City
+[30Jan2025 14:32:42.446] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Jungle Treehouse
+[30Jan2025 14:32:42.446] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Incan
+[30Jan2025 14:32:42.448] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Fortress
+[30Jan2025 14:32:42.448] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Dark Oak Treehouse
+[30Jan2025 14:32:42.450] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Colonial
+[30Jan2025 14:32:42.450] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Cavern
+[30Jan2025 14:32:42.450] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Caledonia
+[30Jan2025 14:32:42.450] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Urban Birch
+[30Jan2025 14:32:42.450] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Ancient Athens
+[30Jan2025 14:32:42.450] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:sync_structures_request
+[30Jan2025 14:32:42.450] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Urban Savanna
+[30Jan2025 14:32:42.451] [Structurize IO Worker #0/WARN] [structurize/]: Failed loading packs from main folder path: .
+[30Jan2025 14:32:42.451] [Structurize IO Worker #0/WARN] [structurize/]: Failed loading client packs from main folder path: .
+[30Jan2025 14:32:42.451] [Structurize IO Worker #0/WARN] [structurize/]: Finished discovering Server Structure packs
+[30Jan2025 14:32:42.454] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbquests:request_team_data
+[30Jan2025 14:32:42.541] [modloading-worker-0/INFO] [dev.tonimatas.packetfixer.PacketFixer/]: Packet Fixer has been initialized successfully
+[30Jan2025 14:32:42.544] [modloading-worker-0/INFO] [be.florens.expandability.ExpandAbility/]: ExpandAbility here, who dis?
+[30Jan2025 14:32:42.545] [modloading-worker-0/INFO] [mod.chiselsandbits.forge.Forge/]: Initialized Chisels&Bits - Forge
+[30Jan2025 14:32:42.555] [modloading-worker-0/INFO] [io.github.apace100.apoli.Apoli/]: Apoli 1.20.1-2.9.0.8 has initialized. Ready to power up your game!
+[30Jan2025 14:32:42.561] [modloading-worker-0/WARN] [KubeJS/]: Plugin com.squoshi.irons_spells_js.compat.entityjs.EntityJSPlugin does not have required mod entityjs loaded, skipping
+[30Jan2025 14:32:42.562] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejsdelight
+[30Jan2025 14:32:42.562] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source lootjs
+[30Jan2025 14:32:42.565] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source recipemachinestage
+[30Jan2025 14:32:42.568] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source createoreexcavation
+[30Jan2025 14:32:42.568] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs_create
+[30Jan2025 14:32:42.620] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModBlockEntityTypes/]: Loaded block entity configuration.
+[30Jan2025 14:32:42.630] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModBlocks/]: Loaded block configuration.
+[30Jan2025 14:32:42.633] [modloading-worker-0/INFO] [KubeJS/]: Done in 570.6 ms
+[30Jan2025 14:32:42.634] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModChiselModeGroups/]: Loaded chisel mode group configuration.
+[30Jan2025 14:32:42.689] [modloading-worker-0/INFO] [FTB XMod Compat/]: [FTB Quests] Enabled KubeJS integration
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: |======================================================================================================================================|
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: |                                                                                                                                      |
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: | Minecolonies has detected an addon mod that alters Minecolonies core code recklessly: 'Tweaks/Compatibility addon for Minecolonies'. |
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: |          Please report any bugs or issues you find directly to the authors of this addon, as the Official Minecolonies Team          |
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: |               will not be able to provide you any support with potential issues that will arise when using this addon.               |
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: |                                                                                                                                      |
+[30Jan2025 14:32:42.728] [modloading-worker-0/WARN] [minecolonies/]: |======================================================================================================================================|
+[30Jan2025 14:32:42.730] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading Rhino Minecraft remapper...
+[30Jan2025 14:32:42.730] [modloading-worker-0/INFO] [dev.latvian.mods.rhino.mod.util.RhinoProperties/]: Rhino properties loaded.
+[30Jan2025 14:32:42.732] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading mappings for 1.20.1
+[30Jan2025 14:32:42.735] [modloading-worker-0/INFO] [irons_spells_js/]: Postponing IronSpells server config...
+[30Jan2025 14:32:42.796] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Done in 0.066 s
+[30Jan2025 14:32:42.857] [modloading-worker-0/INFO] [Railways/]: Registered bogey styles from railways
+[30Jan2025 14:32:42.951] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModChiselModes/]: Loaded chisel mode configuration.
+[30Jan2025 14:32:42.952] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModContainerTypes/]: Loaded container type configuration.
+[30Jan2025 14:32:42.953] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModCreativeTabs/]: Loaded item group configuration.
+[30Jan2025 14:32:42.972] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModItems/]: Loaded item configuration.
+[30Jan2025 14:32:42.975] [modloading-worker-0/INFO] [Railways/]: Registering data fixers
+[30Jan2025 14:32:42.979] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModMetadataKeys/]: Loaded metadata key configuration.
+[30Jan2025 14:32:42.983] [modloading-worker-0/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 0 Datafixer optimizations took 0 milliseconds
+[30Jan2025 14:32:42.984] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModModelProperties/]: Loaded model property configuration.
+[30Jan2025 14:32:42.986] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModModificationOperation/]: Loaded modification operation configuration.
+[30Jan2025 14:32:42.987] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModModificationOperationGroups/]: Loaded modification operation group configuration.
+[30Jan2025 14:32:42.989] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Hex Casting
+[30Jan2025 14:32:42.989] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Oh The Biomes You'll Go
+[30Jan2025 14:32:42.990] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Blue Skies
+[30Jan2025 14:32:42.990] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Twilight Forest
+[30Jan2025 14:32:42.991] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Biomes O' Plenty
+[30Jan2025 14:32:42.992] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Nature's Spirit
+[30Jan2025 14:32:42.992] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModPatternPlacementTypes/]: Loaded pattern placement type configuration.
+[30Jan2025 14:32:42.992] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Dreams and Desires
+[30Jan2025 14:32:42.992] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Quark
+[30Jan2025 14:32:42.993] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModRecipeSerializers/]: Loaded recipe serializer configuration.
+[30Jan2025 14:32:42.993] [modloading-worker-0/INFO] [Railways/]: Registering tracks for TerraFirmaCraft
+[30Jan2025 14:32:42.994] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModTags/]: Loaded tag configuration.
+[30Jan2025 14:32:42.994] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModRecipeTypes/]: Registering recipe types.
+[30Jan2025 14:32:42.994] [modloading-worker-0/INFO] [mod.chiselsandbits.registrars.ModEventHandler/]: Registering event handlers
+[30Jan2025 14:32:43.018] [modloading-worker-0/INFO] [mod.chiselsandbits.forge.platform.ForgePluginDiscoverer/]: Found and loaded ChiselsAndBits plugin: create
+[30Jan2025 14:32:43.157] [modloading-worker-0/INFO] [KubeJS Startup/]: example.js#5: Hello, World! (Loaded startup scripts)
+[30Jan2025 14:32:43.158] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:example.js in 0.025 s
+[30Jan2025 14:32:43.160] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded 1/1 KubeJS startup scripts in 0.362 s with 0 errors and 0 warnings
+[30Jan2025 14:32:43.179] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:send_data_from_client
+[30Jan2025 14:32:43.181] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:first_click
+[30Jan2025 14:32:45.473] [main/INFO] [Moonlight/]: Initialized block sets in 17ms
+[30Jan2025 14:32:45.625] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.Entity from class it.hurts.octostudios.rarcompat.items.necklace.ScarfOfInvisibilityItem
+[30Jan2025 14:32:45.816] [main/WARN] [dev.architectury.registry.registries.forge.RegistrarManagerImpl/]: Registry entry listened Registry Entry [minecraft:entity_type / artifacts:mimic] was not realized!
+[30Jan2025 14:32:45.816] [main/WARN] [dev.architectury.registry.registries.forge.RegistrarManagerImpl/]: Registry entry listened Registry Entry [minecraft:entity_type / artifacts:mimic] was not realized!
+[30Jan2025 14:32:46.914] [main/INFO] [steve_gall.minecolonies_tweaks.core.common.MineColoniesTweaks/]: CustomToolTypeData Added: minecolonies_tweaks:crossbow
+[30Jan2025 14:32:46.915] [main/INFO] [steve_gall.minecolonies_tweaks.core.common.MineColoniesTweaks/]: CustomToolTypeData Added: minecolonies_tweaks:gun
+[30Jan2025 14:32:46.915] [main/INFO] [steve_gall.minecolonies_tweaks.core.common.MineColoniesTweaks/]: CustomToolTypeData Added: minecolonies_tweaks:knife
+[30Jan2025 14:32:46.915] [main/INFO] [steve_gall.minecolonies_tweaks.core.common.MineColoniesTweaks/]: CustomToolTypeData Added: minecolonies_tweaks:ranger_weapon
+[30Jan2025 14:32:46.915] [main/INFO] [steve_gall.minecolonies_tweaks.core.common.MineColoniesTweaks/]: CustomToolTypeData Added: minecolonies_tweaks:knight_weapon
+[30Jan2025 14:32:46.915] [main/INFO] [steve_gall.minecolonies_tweaks.core.common.MineColoniesTweaks/]: CustomToolTypeData Added: minecolonies_tweaks:butcher_tool
+[30Jan2025 14:32:47.082] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/ronan/ramdisk/Server/config/sophisticatedcore-common.toml is not correct. Correcting
+[30Jan2025 14:32:47.117] [main/INFO] [com.tom.createores.CreateOreExcavation/]: Loaded Create Ore Excavation config file createoreexcavation-common.toml
+[30Jan2025 14:32:47.118] [Thread-3/INFO] [com.tom.createores.CreateOreExcavation/]: Create Ore Excavation config just got changed on the file system!
+[30Jan2025 14:32:47.118] [Thread-3/INFO] [com.tom.createores.CreateOreExcavation/]: Create Ore Excavation config just got changed on the file system!
+[30Jan2025 14:32:47.143] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwwindows] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/window.json
+[30Jan2025 14:32:47.145] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Compatibility version 18
+[30Jan2025 14:32:47.151] [modloading-worker-0/INFO] [com.tom.createores.CreateOreExcavation/]: Create Ore Excavation starting
+[30Jan2025 14:32:47.154] [modloading-worker-0/INFO] [FTB Library/]: Setting game stages provider implementation to: KubeJS Stages
+[30Jan2025 14:32:47.154] [modloading-worker-0/INFO] [FTB XMod Compat/]: Chose [KubeJS Stages] as the active game stages implementation
+[30Jan2025 14:32:47.155] [modloading-worker-0/INFO] [FTB XMod Compat/]: Chose [FALLBACK] as the active permissions implementation
+[30Jan2025 14:32:47.157] [modloading-worker-0/INFO] [FTB XMod Compat/]: [FTB Quests] recipe helper provider is [JEI]
+[30Jan2025 14:32:47.159] [modloading-worker-0/INFO] [FTB XMod Compat/]: [FTB Quests] Enabled Item Filters integration
+[30Jan2025 14:32:47.165] [modloading-worker-0/INFO] [com.tom.createores.CreateOreExcavation/]: Initilaized Network Handler
+[30Jan2025 14:32:47.185] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loading plugins
+[30Jan2025 14:32:47.197] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loaded 1 plugin(s)
+[30Jan2025 14:32:47.197] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initializing plugins
+[30Jan2025 14:32:47.201] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initialized 1 plugin(s)
+[30Jan2025 14:32:47.202] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Registering events for 'vibrativevoice'
+[30Jan2025 14:32:47.268] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwwindows] Found status: UP_TO_DATE Current: 2.3.0 Target: null
+[30Jan2025 14:32:47.268] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [controlling] Starting version check at https://updates.blamejared.com/get?n=controlling&gv=1.20.1
+[30Jan2025 14:32:47.489] [modloading-worker-0/INFO] [com.sk89q.worldedit.extension.platform.PlatformManager/]: Got request to register class com.sk89q.worldedit.forge.ForgePlatform with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@d65fee6]
+[30Jan2025 14:32:47.492] [modloading-worker-0/INFO] [com.sk89q.worldedit.forge.ForgeWorldEdit/]: WorldEdit for Forge (version 7.2.15+6463-5ca4dff) is loaded
+[30Jan2025 14:32:47.535] [main/INFO] [Supplementaries/]: Finished mod setup in: [18, 2, 0, 0, 0, 0, 7, 5, 0] ms
+[30Jan2025 14:32:47.577] [main/INFO] [Moonlight/]: Initialized color sets in 36ms
+[30Jan2025 14:32:47.639] [modloading-worker-0/INFO] [irons_spells_js/]: Registering spells on Config File...
+[30Jan2025 14:32:47.639] [modloading-worker-0/INFO] [Magical Jewelry/]: enqueue method registered.
+[30Jan2025 14:32:47.643] [modloading-worker-0/INFO] [io.redspace.ironsspellbooks.IronsSpellbooks/]: Got IMC []
+[30Jan2025 14:32:47.647] [modloading-worker-0/INFO] [Lexiconfig/]: Cataloging lexicon com.codinglitch.vibrativevoice.VibrativeVoiceConfig@40e77351!
+[30Jan2025 14:32:47.654] [modloading-worker-0/INFO] [Lexiconfig/]: Lexiconfig cataloging completed!
+[30Jan2025 14:32:47.658] [modloading-worker-0/WARN] [minecolonies/]: Register mappings
+[30Jan2025 14:32:47.660] [modloading-worker-0/INFO] [com.tom.createores.CreateOreExcavation/]: Loaded KubeJS integration
+[30Jan2025 14:32:47.676] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at net.mehvahdjukaar.supplementaries.integration.JadeCompat
+[30Jan2025 14:32:47.681] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at net.p3pp3rf1y.sophisticatedstorage.compat.jade.StorageJadePlugin
+[30Jan2025 14:32:47.682] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
+[30Jan2025 14:32:47.687] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
+[30Jan2025 14:32:47.690] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.core.CorePlugin
+[30Jan2025 14:32:47.691] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at de.maxhenkel.gravestone.integration.waila.PluginGraveStone
+[30Jan2025 14:32:47.807] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [controlling] Found status: BETA Current: 12.0.2 Target: 12.0.2
+[30Jan2025 14:32:47.807] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bookshelf] Starting version check at https://updates.blamejared.com/get?n=bookshelf&gv=1.20.1
+[30Jan2025 14:32:47.976] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bookshelf] Found status: BETA Current: 20.2.13 Target: 20.2.13
+[30Jan2025 14:32:47.976] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwdoors] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/doors.json
+[30Jan2025 14:32:47.997] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwdoors] Found status: UP_TO_DATE Current: 1.1.1 Target: null
+[30Jan2025 14:32:47.997] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwbridges] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/bridges.json
+[30Jan2025 14:32:48.016] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwbridges] Found status: UP_TO_DATE Current: 3.0.0 Target: null
+[30Jan2025 14:32:48.017] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [supplementaries] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Supplementaries/1.20/forge/update.json
+[30Jan2025 14:32:48.040] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [supplementaries] Found status: BETA Current: 1.20-3.1.11 Target: null
+[30Jan2025 14:32:48.040] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwfences] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/fences.json
+[30Jan2025 14:32:48.055] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwfences] Found status: UP_TO_DATE Current: 1.1.2 Target: null
+[30Jan2025 14:32:48.056] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gamestages] Starting version check at https://updates.blamejared.com/get?n=gamestages&gv=1.20.1
+[30Jan2025 14:32:48.226] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gamestages] Found status: BETA Current: 15.0.2 Target: 15.0.2
+[30Jan2025 14:32:48.226] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [searchables] Starting version check at https://updates.blamejared.com/get?n=searchables&gv=1.20.1
+[30Jan2025 14:32:48.400] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [searchables] Found status: BETA Current: 1.0.3 Target: 1.0.3
+[30Jan2025 14:32:48.400] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwroofs] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/roofs.json
+[30Jan2025 14:32:48.421] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwroofs] Found status: UP_TO_DATE Current: 2.3.1 Target: null
+[30Jan2025 14:32:48.421] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwfurnitures] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/furniture.json
+[30Jan2025 14:32:48.454] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwfurnitures] Found status: UP_TO_DATE Current: 3.3.0 Target: null
+[30Jan2025 14:32:48.454] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwlights] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/lights.json
+[30Jan2025 14:32:48.471] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwlights] Found status: UP_TO_DATE Current: 1.1.0 Target: null
+[30Jan2025 14:32:48.471] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [copycats] Starting version check at https://raw.githubusercontent.com/copycats-plus/copycats/multiloader/update.json
+[30Jan2025 14:32:48.491] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [copycats] Found status: AHEAD Current: 2.1.4+mc.1.20.1-forge Target: null
+[30Jan2025 14:32:48.491] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwpaintings] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/paintings.json
+[30Jan2025 14:32:48.509] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mcwpaintings] Found status: UP_TO_DATE Current: 1.0.5 Target: null
+[30Jan2025 14:32:48.509] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configured] Starting version check at https://mrcrayfish.com/modupdatejson?id=configured
+[30Jan2025 14:32:48.889] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configured] Found status: BETA Current: 2.2.3 Target: 2.2.3
+[30Jan2025 14:32:48.889] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[30Jan2025 14:32:49.036] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
+[30Jan2025 14:32:49.036] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [recipestages] Starting version check at https://updates.blamejared.com/get?n=recipestages&gv=1.20.1
+[30Jan2025 14:32:49.210] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [recipestages] Found status: BETA Current: 8.0.0.2 Target: 8.0.0.2
+[30Jan2025 14:32:49.210] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Starting version check at https://update.maxhenkel.de/forge/voicechat
+[30Jan2025 14:32:50.214] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [voicechat] Found status: OUTDATED Current: 1.20.1-2.5.26 Target: 1.20.1-2.5.27
+[30Jan2025 14:32:50.214] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [enchdesc] Starting version check at https://updates.blamejared.com/get?n=enchdesc&gv=1.20.1
+[30Jan2025 14:32:50.387] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [enchdesc] Found status: BETA Current: 17.1.19 Target: 17.1.19
+[30Jan2025 14:32:50.387] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Moonlight/multi-loader/forge/update.json
+[30Jan2025 14:32:50.411] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Found status: BETA Current: 1.20-2.13.55 Target: null
+[30Jan2025 14:32:50.411] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [flywheel] Starting version check at https://api.modrinth.com/updates/flywheel/forge_updates.json
+[30Jan2025 14:32:50.602] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [flywheel] Found status: BETA Current: 0.6.11-13 Target: null
+[30Jan2025 14:32:50.602] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [createoreexcavation] Starting version check at https://raw.githubusercontent.com/tom5454/Create-Ore-Excavation/main/version-check.json
+[30Jan2025 14:32:50.625] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [createoreexcavation] Found status: BETA Current: 1.5.3 Target: 1.5.3
+[30Jan2025 14:32:50.625] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gravestone] Starting version check at https://update.maxhenkel.de/forge/gravestone
+[30Jan2025 14:32:50.801] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gravestone] Found status: AHEAD Current: 1.20.1-1.0.24 Target: null
+[30Jan2025 14:32:50.801] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [packetfixer] Starting version check at https://api.modrinth.com/updates/packet-fixer/forge_updates.json
+[30Jan2025 14:32:50.860] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[30Jan2025 14:32:50.967] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [packetfixer] Found status: UP_TO_DATE Current: 1.4.3 Target: null
+[30Jan2025 14:32:53.439] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/ronan/ramdisk/Server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23313!/assets/.mcassetsroot' uses unexpected schema
+[30Jan2025 14:32:53.439] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/ronan/ramdisk/Server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23313!/data/.mcassetsroot' uses unexpected schema
+[30Jan2025 14:32:53.534] [main/INFO] [Supplementaries/]: Generated runtime SERVER_DATA for pack Supplementaries Generated Pack (supplementaries) in: 20 ms
+[30Jan2025 14:32:53.546] [main/INFO] [Supplementaries/]: Generated runtime SERVER_DATA for pack Supplementaries Generated Pack (supplementaries) in: 1 ms
+[30Jan2025 14:32:53.571] [main/INFO] [KubeJS Server/]: Loaded script server_scripts:server_create.js in 0.005 s
+[30Jan2025 14:32:53.572] [main/INFO] [KubeJS Server/]: Loaded script server_scripts:server_farmersdelight.js in 0.001 s
+[30Jan2025 14:32:53.572] [main/INFO] [KubeJS Server/]: Loaded script server_scripts:server_spiceoflife.js in 0.0 s
+[30Jan2025 14:32:53.573] [main/INFO] [KubeJS Server/]: Loaded 3/3 KubeJS server scripts in 0.022 s with 0 errors and 0 warnings
+[30Jan2025 14:32:53.573] [main/INFO] [KubeJS Server/]: Scripts loaded
+[30Jan2025 14:32:53.577] [main/INFO] [KubeJS Server/]: Initializing recipe event...
+[30Jan2025 14:32:54.152] [main/INFO] [com.sk89q.worldedit.extension.platform.PlatformCommandManager/]: Registering commands with com.sk89q.worldedit.forge.ForgePlatform
+[30Jan2025 14:32:54.245] [main/INFO] [Calio/]: CDRM Initialized with 16 registries
+[30Jan2025 14:32:54.374] [Worker-Main-12/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag forge:grain/pea as it is missing following references: minecolonies:pea (from MineColonies_Tweaks-1.20.1-2.41.jar)
+[30Jan2025 14:32:54.375] [Worker-Main-12/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag supplementaries:lunch_basket_blacklist as it is missing following references: potionbundles:potion_bundle (from supplementaries-1.20-3.1.11.jar)
+[30Jan2025 14:32:54.867] [Worker-Main-6/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:minecolonies_compatibility:blocks/citizen_grid
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'minecolonies_compatibility:citizen_grid'
+	at net.minecraft.util.GsonHelper.m_13866_(GsonHelper.java:145) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at net.minecraft.util.GsonHelper.m_13874_(GsonHelper.java:145) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.util.GsonHelper.m_13909_(GsonHelper.java:153) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.m_7267_(LootItem.java:55) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.m_7267_(LootItem.java:40) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.m_5921_(LootPoolSingletonContainer.java:151) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.m_5921_(LootPoolSingletonContainer.java:129) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.m_7561_(LootPoolEntryContainer.java:86) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.m_7561_(LootPoolEntryContainer.java:74) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.GsonAdapterFactory$JsonAdapter.deserialize(GsonAdapterFactory.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraft.util.GsonHelper.m_13808_(GsonHelper.java:463) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.util.GsonHelper.m_13836_(GsonHelper.java:471) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:192) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:189) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraft.util.GsonHelper.m_13808_(GsonHelper.java:463) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.util.GsonHelper.m_13845_(GsonHelper.java:481) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:294) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:291) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1261) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:871) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraftforge.common.ForgeHooks.lambda$getLootTableDeserializer$3(ForgeHooks.java:848) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataType.deserialize(LootDataType.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataManager.lambda$scheduleElementParse$4(LootDataManager.java:56) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.HashMap.forEach(HashMap.java:1429) ~[?:?]
+	at net.minecraft.world.level.storage.loot.LootDataManager.m_278660_(LootDataManager.java:55) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
+[30Jan2025 14:32:54.895] [Worker-Main-6/ERROR] [net.minecraftforge.common.ForgeHooks/]: Couldn't parse element loot_tables:minecolonies_compatibility:blocks/citizen_inventory
+com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'minecolonies_compatibility:citizen_inventory'
+	at net.minecraft.util.GsonHelper.m_13866_(GsonHelper.java:145) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at net.minecraft.util.GsonHelper.m_13874_(GsonHelper.java:145) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.util.GsonHelper.m_13909_(GsonHelper.java:153) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.m_7267_(LootItem.java:55) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootItem$Serializer.m_7267_(LootItem.java:40) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.m_5921_(LootPoolSingletonContainer.java:151) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer$Serializer.m_5921_(LootPoolSingletonContainer.java:129) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.m_7561_(LootPoolEntryContainer.java:86) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer$Serializer.m_7561_(LootPoolEntryContainer.java:74) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.GsonAdapterFactory$JsonAdapter.deserialize(GsonAdapterFactory.java:102) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraft.util.GsonHelper.m_13808_(GsonHelper.java:463) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.util.GsonHelper.m_13836_(GsonHelper.java:471) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:192) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootPool$Serializer.deserialize(LootPool.java:189) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1290) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:179) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraft.util.GsonHelper.m_13808_(GsonHelper.java:463) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.util.GsonHelper.m_13845_(GsonHelper.java:481) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:294) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootTable$Serializer.deserialize(LootTable.java:291) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1261) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraftforge.common.ForgeHooks.loadLootTable(ForgeHooks.java:871) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraftforge.common.ForgeHooks.lambda$getLootTableDeserializer$3(ForgeHooks.java:848) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataType.deserialize(LootDataType.java:45) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.world.level.storage.loot.LootDataManager.lambda$scheduleElementParse$4(LootDataManager.java:56) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.HashMap.forEach(HashMap.java:1429) ~[?:?]
+	at net.minecraft.world.level.storage.loot.LootDataManager.m_278660_(LootDataManager.java:55) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
+[30Jan2025 14:32:55.017] [main/INFO] [KubeJS Server/]: Processing recipes...
+[30Jan2025 14:32:55.298] [Thread-3/WARN] [net.minecraftforge.fml.config.ConfigFileTypeHandler/CONFIG]: Configuration file /home/ronan/ramdisk/Server/config/sophisticatedcore-common.toml is not correct. Correcting
+[30Jan2025 14:32:55.461] [Thread-3/WARN] [net.minecraftforge.fml.config.ConfigFileTypeHandler/CONFIG]: Configuration file /home/ronan/ramdisk/Server/config/sophisticatedcore-common.toml is not correct. Correcting
+[30Jan2025 14:32:55.642] [Thread-3/WARN] [net.minecraftforge.fml.config.ConfigFileTypeHandler/CONFIG]: Configuration file /home/ronan/ramdisk/Server/config/sophisticatedcore-common.toml is not correct. Correcting
+[30Jan2025 14:32:55.673] [main/INFO] [KubeJS Server/]: Found 7942 recipes in 654.5 ms
+[30Jan2025 14:32:55.682] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/iron_plate recipe (createaddition:rolling/iron_plate) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.682] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/electrum_ingot recipe (createaddition:rolling/electrum_ingot) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.683] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/brass_ingot recipe (createaddition:rolling/brass_ingot) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.683] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/electrum_plate recipe (createaddition:rolling/electrum_plate) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.684] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/copper_ingot recipe (createaddition:rolling/copper_ingot) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.684] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/iron_ingot recipe (createaddition:rolling/iron_ingot) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.684] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/copper_plate recipe (createaddition:rolling/copper_plate) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.685] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/gold_plate recipe (createaddition:rolling/gold_plate) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.685] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/gold_ingot recipe (createaddition:rolling/gold_ingot) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.685] [KubeJS Recipe Event Worker 0/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/straw recipe (createaddition:rolling/straw) specified a duration. Durations have no impact on this type of recipe.
+[30Jan2025 14:32:55.713] [main/INFO] [KubeJS Server/]: Posted recipe events in 38.94 ms
+[30Jan2025 14:32:55.769] [main/INFO] [KubeJS Server/]: Added 1 recipes, removed 12 recipes, modified 2 recipes, with 0 failed recipes in 53.87 ms
+[30Jan2025 14:32:55.791] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement create_central_kitchen:recipes/crafting/sap_bottles_from_bucket: Unknown item id 'create_central_kitchen:sap_bucket'
+[30Jan2025 14:32:55.804] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_mason_table_upgrade_from_storage_chipped_mason_table_upgrade: Unknown item id 'sophisticatedstorage:chipped/mason_table_upgrade'
+[30Jan2025 14:32:55.807] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement largemeals:recipes/cooking/mushroom_pot_pie_block: Unknown item id 'farmersdelight:chicken_cut'
+[30Jan2025 14:32:55.812] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_loom_table_upgrade_from_backpack_chipped_loom_table_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/loom_table_upgrade'
+[30Jan2025 14:32:55.813] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement create_central_kitchen:recipes/crafting/sap_bucket_from_bottles: Unknown item id 'autumnity:sap_bottle'
+[30Jan2025 14:32:55.814] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_glassblower_upgrade_from_storage_chipped_glassblower_upgrade: Unknown item id 'sophisticatedstorage:chipped/glassblower_upgrade'
+[30Jan2025 14:32:55.817] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_carpenters_table_upgrade_from_backpack_chipped_carpenters_table_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/carpenters_table_upgrade'
+[30Jan2025 14:32:55.817] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_carpenters_table_upgrade_from_storage_chipped_carpenters_table_upgrade: Unknown item id 'sophisticatedstorage:chipped/carpenters_table_upgrade'
+[30Jan2025 14:32:55.823] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_alchemy_bench_upgrade_from_backpack_chipped_alchemy_bench_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/alchemy_bench_upgrade'
+[30Jan2025 14:32:55.828] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_loom_table_upgrade_from_storage_chipped_loom_table_upgrade: Unknown item id 'sophisticatedstorage:chipped/loom_table_upgrade'
+[30Jan2025 14:32:55.842] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement largemeals:recipes/cooking/omurice_block: Unknown item id 'farmersdelight:chicken_cut'
+[30Jan2025 14:32:55.851] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_botanist_workbench_upgrade_from_storage_chipped_botanist_workbench_upgrade: Unknown item id 'sophisticatedstorage:chipped/botanist_workbench_upgrade'
+[30Jan2025 14:32:55.852] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_glassblower_upgrade_from_backpack_chipped_glassblower_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/glassblower_upgrade'
+[30Jan2025 14:32:55.853] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_mason_table_upgrade_from_backpack_chipped_mason_table_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/mason_table_upgrade'
+[30Jan2025 14:32:55.857] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_botanist_workbench_upgrade_from_backpack_chipped_botanist_workbench_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/botanist_workbench_upgrade'
+[30Jan2025 14:32:55.860] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_tinkering_table_upgrade_from_storage_chipped_tinkering_table_upgrade: Unknown item id 'sophisticatedstorage:chipped/tinkering_table_upgrade'
+[30Jan2025 14:32:55.862] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/backpack_chipped_alchemy_bench_upgrade_from_storage_chipped_alchemy_bench_upgrade: Unknown item id 'sophisticatedstorage:chipped/alchemy_bench_upgrade'
+[30Jan2025 14:32:55.863] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement sophisticatedstorage:recipes/misc/storage_chipped_tinkering_table_upgrade_from_backpack_chipped_tinkering_table_upgrade: Unknown item id 'sophisticatedbackpacks:chipped/tinkering_table_upgrade'
+[30Jan2025 14:32:55.865] [main/ERROR] [net.minecraft.server.ServerAdvancementManager/]: Parsing error loading custom advancement largemeals:recipes/cooking/chicken_curry: Unknown item id 'farmersdelight:chicken_cut'
+[30Jan2025 14:32:55.888] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 4427 advancements
+[30Jan2025 14:32:55.895] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 12 curio slots
+[30Jan2025 14:32:55.900] [main/ERROR] [top.theillusivec4.curios.Curios/]: talisman is not a registered slot type!
+[30Jan2025 14:32:55.900] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 10 curio entities
+[30Jan2025 14:32:55.910] [main/WARN] [net.minecraftforge.common.loot.LootModifierManager/]: Unable to decode loot conditions
+com.google.gson.JsonSyntaxException: Unknown type 'minecraft:alternatives'
+	at net.minecraft.world.level.storage.loot.GsonAdapterFactory$JsonAdapter.deserialize(GsonAdapterFactory.java:99) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1261) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraftforge.common.loot.IGlobalLootModifier.lambda$static$1(IGlobalLootModifier.java:39) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at com.mojang.serialization.Decoder$1.lambda$decode$1(Decoder.java:49) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Decoder$1.decode(Decoder.java:49) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Codec$2.decode(Codec.java:71) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Decoder.parse(Decoder.java:18) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.FieldDecoder.decode(FieldDecoder.java:29) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapCodec$1.decode(MapCodec.java:34) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$Instance$5.decode(RecordCodecBuilder.java:323) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$2.decode(RecordCodecBuilder.java:107) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.KeyDispatchCodec.lambda$decode$3(KeyDispatchCodec.java:67) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.KeyDispatchCodec.lambda$decode$4(KeyDispatchCodec.java:58) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.KeyDispatchCodec.decode(KeyDispatchCodec.java:56) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapDecoder.lambda$compressedDecode$1(MapDecoder.java:52) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapDecoder.compressedDecode(MapDecoder.java:52) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapCodec$MapCodecCodec.decode(MapCodec.java:91) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Decoder.parse(Decoder.java:18) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at net.minecraftforge.common.loot.LootModifierManager.apply(LootModifierManager.java:79) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraftforge.common.loot.LootModifierManager.m_5787_(LootModifierManager.java:38) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.Util.m_214652_(Util.java:783) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.Util.m_214679_(Util.java:772) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.server.Main.main(Main.java:166) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[30Jan2025 14:32:55.912] [main/WARN] [net.minecraftforge.common.loot.LootModifierManager/]: Could not decode GlobalLootModifier with json id nethersdelight:chopping_leather - error: Unknown type 'minecraft:alternatives'
+[30Jan2025 14:32:55.912] [main/WARN] [net.minecraftforge.common.loot.LootModifierManager/]: Unable to decode loot conditions
+com.google.gson.JsonSyntaxException: Unknown type 'minecraft:alternative'
+	at net.minecraft.world.level.storage.loot.GsonAdapterFactory$JsonAdapter.deserialize(GsonAdapterFactory.java:99) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1319) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1261) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraftforge.common.loot.IGlobalLootModifier.lambda$static$1(IGlobalLootModifier.java:39) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at com.mojang.serialization.Decoder$1.lambda$decode$1(Decoder.java:49) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Decoder$1.decode(Decoder.java:49) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Codec$2.decode(Codec.java:71) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Decoder.parse(Decoder.java:18) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.FieldDecoder.decode(FieldDecoder.java:29) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapCodec$1.decode(MapCodec.java:34) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$Instance$5.decode(RecordCodecBuilder.java:323) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.RecordCodecBuilder$2.decode(RecordCodecBuilder.java:107) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.KeyDispatchCodec.lambda$decode$3(KeyDispatchCodec.java:67) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.KeyDispatchCodec.lambda$decode$4(KeyDispatchCodec.java:58) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.codecs.KeyDispatchCodec.decode(KeyDispatchCodec.java:56) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapDecoder.lambda$compressedDecode$1(MapDecoder.java:52) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.lambda$flatMap$11(DataResult.java:139) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.DataResult.flatMap(DataResult.java:137) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapDecoder.compressedDecode(MapDecoder.java:52) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.MapCodec$MapCodecCodec.decode(MapCodec.java:91) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at com.mojang.serialization.Decoder.parse(Decoder.java:18) ~[datafixerupper-6.0.8.jar%2377!/:?]
+	at net.minecraftforge.common.loot.LootModifierManager.apply(LootModifierManager.java:79) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraftforge.common.loot.LootModifierManager.m_5787_(LootModifierManager.java:38) ~[forge-1.20.1-47.3.0-universal.jar%23318!/:?]
+	at net.minecraft.server.packs.resources.SimplePreparableReloadListener.m_10789_(SimplePreparableReloadListener.java:13) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.m_143940_(SimpleReloadInstance.java:69) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.Util.m_214652_(Util.java:783) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.Util.m_214679_(Util.java:772) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at net.minecraft.server.Main.main(Main.java:166) ~[server-1.20.1-20230612.114412-srg.jar%23313!/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[30Jan2025 14:32:55.913] [main/WARN] [net.minecraftforge.common.loot.LootModifierManager/]: Could not decode GlobalLootModifier with json id nethersdelight:chopping_string - error: Unknown type 'minecraft:alternative'
+[30Jan2025 14:32:56.220] [main/INFO] [io.github.apace100.origins.Origins/]: Powers [origins-plus-plus:mouse/yoink,origins-plus-plus:mouse/ride] were disabled by config for origin: origins-plus-plus:mouse
+[30Jan2025 14:32:56.340] [main/INFO] [Supplementaries/]: Loaded 27 flute songs
+[30Jan2025 14:32:56.347] [main/INFO] [minecolonies/]: Beginning load of custom recipes for colony workers
+[30Jan2025 14:32:56.352] [main/INFO] [minecolonies/]: Loaded 159 recipes for 16 crafters
+[30Jan2025 14:32:56.353] [main/INFO] [minecolonies/]: Beginning load of research for University.
+[30Jan2025 14:32:56.375] [main/INFO] [minecolonies/]: Loaded 202 recipes for 4 research branches
+[30Jan2025 14:32:56.378] [main/INFO] [minecolonies/]: Loading quests from data
+[30Jan2025 14:32:56.384] [main/INFO] [minecolonies/]: Finished loading quests from data
+[30Jan2025 14:32:56.387] [main/WARN] [minecolonies/]: Read 1544 items with their nbt keys for compatibility.
+[30Jan2025 14:32:58.616] [main/INFO] [Moonlight/]: Applied 7 data villager trades
+[30Jan2025 14:32:58.666] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.667] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.667] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.692] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.692] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.693] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.702] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.703] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.703] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.726] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.726] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.727] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:32:58.829] [main/INFO] [Supplementaries/]: Finished additional setup in 0 ms
+[30Jan2025 14:32:59.113] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[30Jan2025 14:32:59.113] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[30Jan2025 14:32:59.113] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[30Jan2025 14:32:59.113] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[30Jan2025 14:32:59.166] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[30Jan2025 14:32:59.182] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[30Jan2025 14:32:59.252] [Server thread/INFO] [com.tom.createores.CreateOreExcavation/]: Loaded Create Ore Excavation config file createoreexcavation-server.toml
+[30Jan2025 14:32:59.290] [Server thread/INFO] [FTB Teams/]: loaded team data: 0 known players, 0 teams total
+[30Jan2025 14:32:59.341] [Server thread/INFO] [spark/]: Starting background profiler...
+[30Jan2025 14:32:59.771] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[30Jan2025 14:33:00.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[30Jan2025 14:33:00.473] [Server thread/INFO] [KubeJS Server/]: Server resource reload complete!
+[30Jan2025 14:33:02.218] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[30Jan2025 14:33:02.234] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[30Jan2025 14:33:02.242] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[30Jan2025 14:33:02.250] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[30Jan2025 14:33:02.471] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[30Jan2025 14:33:02.972] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 41%
+[30Jan2025 14:33:03.263] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2793 ms
+[30Jan2025 14:33:03.263] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (4.019s)! For help, type "help"
+[30Jan2025 14:33:03.303] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[30Jan2025 14:33:03.305] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:green_tea
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:yellow_tea
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:coffee
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:black_tea
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:rose_hip_tea
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:dandelion_tea
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:black_tea
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:rose_hip_pie_slice
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:coffee_cake_slice
+[30Jan2025 14:33:03.306] [Server thread/WARN] [solapplepie/]: Item is not food: farmersrespite:blazing_chili
+[30Jan2025 14:33:03.386] [Server thread/INFO] [puffish_skills/]: [puffish_skills] Mod configuration loaded successfully!
+[30Jan2025 14:33:06.357] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.358] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.359] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.360] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.361] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.362] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.363] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.363] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.364] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.365] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.366] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.366] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.367] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.368] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.369] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.369] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.370] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.371] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.372] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.373] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.373] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.374] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.375] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.375] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.376] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.377] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.377] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.378] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.379] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.379] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.380] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.381] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.381] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.382] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.383] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.384] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.384] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.385] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.386] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.387] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.387] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.388] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.389] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.390] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.391] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.392] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.392] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.393] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.394] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.395] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.395] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.396] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.397] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.397] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.398] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.399] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.400] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.401] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.401] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.402] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.403] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.404] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.404] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.405] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.406] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.407] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.407] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.408] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.409] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.410] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.410] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.411] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.412] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.412] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.413] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.414] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.414] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.415] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.416] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.416] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.417] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.418] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.418] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.419] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.419] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.420] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.421] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.421] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.422] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.423] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.423] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.424] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.425] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.426] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.426] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.427] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.428] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.429] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.429] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.430] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.431] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.432] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.432] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.433] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.434] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.434] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.435] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.435] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.436] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.437] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.437] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.438] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.438] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.439] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.440] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.440] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.441] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.441] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.442] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.442] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.443] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.443] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.444] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.444] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.445] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.445] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.446] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.446] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.447] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.448] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.448] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.449] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.449] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.450] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.451] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.451] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.452] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.453] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.453] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.454] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.455] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.455] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.456] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.457] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.457] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.458] [Server thread/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/multiplayer/ClientLevel for invalid dist DEDICATED_SERVER
+[30Jan2025 14:33:06.602] [Server thread/INFO] [minecolonies/]: Finished discovering Ores 21 24
+[30Jan2025 14:33:06.602] [Server thread/INFO] [minecolonies/]: Finished discovering saplings 14
+[30Jan2025 14:33:06.602] [Server thread/INFO] [minecolonies/]: Finished discovering plantables 19
+[30Jan2025 14:33:06.603] [Server thread/INFO] [minecolonies/]: Finished discovering food 289 358
+[30Jan2025 14:33:06.603] [Server thread/INFO] [minecolonies/]: Finished discovering fuel 1705
+[30Jan2025 14:33:06.603] [Server thread/INFO] [minecolonies/]: Finished discovering flowers 34
+[30Jan2025 14:33:06.603] [Server thread/INFO] [minecolonies/]: Finished discovering items 7638
+[30Jan2025 14:33:06.603] [Server thread/INFO] [minecolonies/]: Finished discovering recruitment costs
+[30Jan2025 14:33:06.604] [Server thread/INFO] [minecolonies/]: Finished discovering compostables 480
+[30Jan2025 14:33:06.760] [Server thread/INFO] [patchouli/]: Sending reload packet to clients
+[30Jan2025 14:33:06.780] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice chat server started at port 24454
+[30Jan2025 14:33:09.642] [spark-worker-pool-1-thread-1/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] Profiler live viewer:
+[30Jan2025 14:33:09.643] [spark-worker-pool-1-thread-1/INFO] [net.minecraft.server.MinecraftServer/]: https://spark.lucko.me/TpZ9US5q61
+[30Jan2025 14:33:13.934] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] Stopping the background profiler before starting... please wait
+[30Jan2025 14:33:13.981] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] Starting a new profiler, please wait...
+[30Jan2025 14:33:13.992] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] Profiler is now running! (async)
+[30Jan2025 14:33:13.992] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] It will run in the background until it is stopped by an admin.
+[30Jan2025 14:33:13.993] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] To stop the profiler and upload the results, run:
+[30Jan2025 14:33:13.993] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡]   /spark profiler stop
+[30Jan2025 14:33:13.993] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] To view the profiler while it's running, run:
+[30Jan2025 14:33:13.993] [spark-worker-pool-1-thread-3/INFO] [net.minecraft.server.MinecraftServer/]: [⚡]   /spark profiler open
+[30Jan2025 14:33:22.406] [spark-worker-pool-1-thread-2/INFO] [net.minecraft.server.MinecraftServer/]: [⚡] Profiler live viewer:
+[30Jan2025 14:33:22.406] [spark-worker-pool-1-thread-2/INFO] [net.minecraft.server.MinecraftServer/]: https://spark.lucko.me/ezsqgdLp0M
+[30Jan2025 14:33:26.745] [WebSocketConnectReadThread-165/INFO] [spark/]: [Viewer - 6thfPnDlCdvyqqd] Client connected: clientId=ebb1-295d, keyhash=128d00, desc=Firefox on Linux
+[30Jan2025 14:33:35.550] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player SourceOfficial is 7994e39c-d983-4cc5-9045-b9555058d3c9
+[30Jan2025 14:33:35.606] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 0
+[30Jan2025 14:33:35.634] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 1
+[30Jan2025 14:33:35.683] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 2
+[30Jan2025 14:33:35.733] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 3
+[30Jan2025 14:33:35.783] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 4
+[30Jan2025 14:33:35.833] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 5
+[30Jan2025 14:33:35.883] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 6
+[30Jan2025 14:33:35.933] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 7
+[30Jan2025 14:33:35.983] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 8
+[30Jan2025 14:33:36.033] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 9
+[30Jan2025 14:33:36.083] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 10
+[30Jan2025 14:33:36.132] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 11
+[30Jan2025 14:33:36.370] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 12
+[30Jan2025 14:33:36.448] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 13
+[30Jan2025 14:33:36.449] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 14
+[30Jan2025 14:33:36.454] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 15
+[30Jan2025 14:33:36.481] [Netty Epoll Server IO #2/INFO] [Calio/]: Received acknowledgment for login packet with id 16
+[30Jan2025 14:33:42.547] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: SourceOfficial[/127.0.0.1:56778] logged in with entity id 121 at (-79.5, 63.0, 283.5)
+[30Jan2025 14:33:42.743] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SourceOfficial joined the game
+[30Jan2025 14:33:42.853] [Server thread/WARN] [solapplepie/]: Invalid attribute specified in config: generic.speed
+[30Jan2025 14:33:42.878] [Server thread/INFO] [Jade/]: Syncing config to SourceOfficial (7994e39c-d983-4cc5-9045-b9555058d3c9)
+[30Jan2025 14:33:42.879] [Server thread/INFO] [structurize/]: New Server UUID 3efdbb5f-5343-4379-9715-06ffcb194778
+[30Jan2025 14:33:44.375] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of SourceOfficial (18)
+[30Jan2025 14:33:44.377] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to SourceOfficial
+[30Jan2025 14:33:56.013] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully authenticated player 7994e39c-d983-4cc5-9045-b9555058d3c9
+[30Jan2025 14:33:57.011] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Successfully validated connection of player 7994e39c-d983-4cc5-9045-b9555058d3c9
+[30Jan2025 14:33:57.014] [VoiceChatPacketProcessingThread/INFO] [voicechat/]: [voicechat] Player SourceOfficial (7994e39c-d983-4cc5-9045-b9555058d3c9) successfully connected to voice chat
+[30Jan2025 14:34:05.315] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float_timer] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float]
+[30Jan2025 14:34:05.315] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float_respawn] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float]
+[30Jan2025 14:34:05.315] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float_damage] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float]
+[30Jan2025 14:34:05.315] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float_float] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float]
+[30Jan2025 14:34:05.315] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float_resource] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float]
+[30Jan2025 14:34:05.315] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float_toggle] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/float]
+[30Jan2025 14:34:05.316] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/projectiles_resistance] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/projectiles]
+[30Jan2025 14:34:05.316] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/projectiles_immunity] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/projectiles]
+[30Jan2025 14:34:05.317] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/small_reset] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/small]
+[30Jan2025 14:34:05.317] [Server thread/INFO] [io.github.apace100.apoli.Apoli/]: Adding subpower ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/small_scale] from power ResourceKey[apoli:configured_power / origins-plus-plus:withered-fox/small]
+[30Jan2025 14:34:06.385] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SourceOfficial has made the advancement [We Need to Go Deeper]
+[30Jan2025 14:34:19.260] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Made SourceOfficial a server operator
+[30Jan2025 14:34:23.859] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [SourceOfficial: Set own game mode to Creative Mode]
+[30Jan2025 14:34:26.002] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [SourceOfficial: Set own game mode to Spectator Mode]
+[30Jan2025 14:35:05.908] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2027ms or 40 ticks behind
+[30Jan2025 14:35:09.132] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SourceOfficial moved too quickly! -24.422570046559485,0.0,-9.299979903000121
+[30Jan2025 14:35:14.546] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SourceOfficial has completed the challenge [Hot Tourist Destinations]
+[30Jan2025 14:35:20.253] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SourceOfficial moved too quickly! -24.42256987976998,0.0,-9.299979839487492
+[30Jan2025 14:35:42.547] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SourceOfficial has made the advancement [A Terrible Fortress]
+[30Jan2025 14:36:05.128] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2048ms or 40 ticks behind
+[30Jan2025 14:36:49.552] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SourceOfficial has made the advancement [Those Were the Days]
+[30Jan2025 14:37:18.126] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2046ms or 40 ticks behind
+[30Jan2025 14:37:56.487] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2057ms or 41 ticks behind
+[30Jan2025 14:41:08.330] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2099ms or 41 ticks behind
+[30Jan2025 14:41:11.302] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SourceOfficial moved too quickly! -24.42257004655403,0.0,-9.29997990299671
+[30Jan2025 14:41:19.422] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SourceOfficial moved too quickly! -24.422563446394634,0.0,-9.299977389693595
+[30Jan2025 14:41:53.128] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2098ms or 41 ticks behind
+[30Jan2025 14:43:59.136] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2056ms or 41 ticks behind
+[30Jan2025 14:44:00.723] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SourceOfficial moved too quickly! -24.222875379797188,0.0,-9.808355411303637
+[30Jan2025 14:44:00.726] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: SourceOfficial moved too quickly! -20.185729483164323,0.0,-8.173629509419698
+[30Jan2025 14:45:11.630] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[30Jan2025 14:45:11.631] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[30Jan2025 14:45:11.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[30Jan2025 14:45:12.667] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[30Jan2025 14:45:12.696] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[30Jan2025 14:45:12.921] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[30Jan2025 14:45:12.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[30Jan2025 14:45:12.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[30Jan2025 14:45:12.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[30Jan2025 14:45:12.995] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[30Jan2025 14:45:13.012] [Server thread/INFO] [Calio/]: Removing Dynamic Registries for: net.minecraft.server.dedicated.DedicatedServer@a8ab320

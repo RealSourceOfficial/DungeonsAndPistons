@@ -1,0 +1,5 @@
+- Proposal
+	- Disable all the End based origins
+	- Reasoning: 
+		- The end has incredibly high-level loot tables, proving Diamond armor, enchanted tools, and much more in easily accessible locations. 
+		- Additionally, some (but notably not all) origins ARE NOT targeted by enemies whatsoever.

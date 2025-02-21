@@ -1,0 +1,4 @@
+- Proposal
+	- Disable the **Ore Finder** from Create Ore Excavation, use something like Tetra and AE2's quartz to make a pickaxe that acts like the **Ore Finder** on right click (with empty offhand)
+- Requirements
+	- See [[AE2 Balancing Thread]]

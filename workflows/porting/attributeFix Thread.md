@@ -1,0 +1,3 @@
+- Info
+	- attributeFix removes the limits of stats but does NOT modify the calculation of them.
+	- For instance, full armor is "capped" and doesn't factor into damage calculations at a certain point, making armor useless after a certain point.

@@ -1,0 +1,6 @@
+- Proposal 1:
+	- Use molten steel, in combination with a tetra or tetra-like mod, to do pickaxe autosmelting.
+- Proposal 2: 
+	- Class pipes by material, add max flow rate, broken state, and pipe explosions.
+	- Reason:
+		- TFMG adds various pipe materials, and adding a dynamic system of fluids breaking and blowing pipes will discourage the use of a single pipe in a factory.
