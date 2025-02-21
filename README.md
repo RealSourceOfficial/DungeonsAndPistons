@@ -1,5 +1,8 @@
 # The ScurvyDogs Unofficial Pack
 
+### Disclaimer
+This pack was originally owned and maintaind by Eric Pfau, and was forked (officially as of commit a20b875) to be maintained by RealSourceOfficial
+
 ## 🌍 Adventure, RPG, and Tech Combined!
 
 The ScurvyDogs Unofficial Pack is a **multiplayer-focused adventure/RPG modpack** built around our small community. While designed for online play, it also offers a rewarding single-player experience.
