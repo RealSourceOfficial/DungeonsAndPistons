@@ -1,0 +1,30 @@
+# not finished.
+name: "Pack large mods to reduce repo size"
+
+run-name: Link ${{ inputs.mods }} to ${{ output.repos }}
+
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - mods/**.jar
+
+jobs:
+  checkout:
+    runs-on: self-hosted
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            mods
+  check-mods:
+    runs-on: self-hosted
+    needs: [checkout]
+    permissions: {}
+    steps:
+      - name: Run Python Script
+        
