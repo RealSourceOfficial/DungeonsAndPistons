@@ -21,10 +21,15 @@ jobs:
         with:
           sparse-checkout: |
             mods
-  check-mods:
+  analyze:
     runs-on: self-hosted
-    needs: [checkout]
     permissions: {}
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./scripts
     steps:
       - name: Run Python Script
+        run: |
+          mod-linker.py
         

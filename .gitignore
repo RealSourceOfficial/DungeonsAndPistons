@@ -9,5 +9,3 @@ replay_pid*
 # base-install/
 # patchnotes/
 
-# obsidian, as I have a vault setup in here. hence the .canvas file.
-.obsidian/
