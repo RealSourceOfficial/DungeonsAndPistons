@@ -32,4 +32,3 @@ jobs:
       - name: Run Python Script
         run: |
           mod-linker.py
-        
