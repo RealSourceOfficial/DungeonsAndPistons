@@ -168,6 +168,7 @@
   },
   "active": "f5e005105a0be7d6",
   "lastOpenFiles": [
+    "mods/mod_cache.json",
     "original-pack",
     "porting/AE2 Balancing Thread.md",
     "porting/Create TFMG.md",
@@ -194,7 +195,6 @@
     "porting/research/bugs",
     "porting/Ore Finder Tweaks.md",
     "porting/research/latest.log - optimized jvm.md",
-    "porting/research/default jvm.sparkprofile",
-    "porting/research/default.sparkprofile copy"
+    "porting/research/default jvm.sparkprofile"
   ]
 }

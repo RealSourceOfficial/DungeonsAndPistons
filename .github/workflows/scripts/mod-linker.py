@@ -1,13 +1,22 @@
 #!/bin/python
-from json import dumps, load as jload
+from json import dump, load as jload
 from tomllib import load as tload
 from zipfile import ZipFile
-from os import listdir, getcwd, stat
-from os.path import join, realpath
+from os import listdir, getcwd, stat, chdir
+from os.path import join, realpath, exists
 from requests import get
 from requests.exceptions import RequestException
 from argparse import ArgumentParser
 from re import match, sub
+from hashlib import sha256
+
+chdir('../../../mods/')
+
+def hash_file(filepath):
+    hasher = sha256()
+    with open(filepath, 'rb') as f:
+        hasher.update(f.read())
+    return hasher.hexdigest()
 
 def nestedDIF(data, pathToFollow):
     for path in pathToFollow:
@@ -55,12 +64,21 @@ def main():
     parser.add_argument('-u', '--unsafe', action='store_true')
     args = parser.parse_args()
 
+    cache_file = "mod_cache.json"
+    if exists(cache_file):
+        with open(cache_file, "r") as f:
+            mod_data = json.load(f)
+    else:
+        mod_data = {}
+
     largeMods = [realpath(f) for f in listdir(getcwd())
                  if stat(realpath(f)).st_size > 1000000]
 
-    mod_data = {}
-
     for modFile in largeMods:
+        file_hash = hash_file(modFile)
+        if modFile in mod_data and mod_data[modfile].get("hash") == file_hash:
+            continue
+
         with ZipFile(modFile, 'r') as modContents:
             with modContents.open('META-INF/mods.toml', 'r') as modInfo:
                 TOML = tload(modInfo)
@@ -86,11 +104,10 @@ def main():
                 githubLinks = [convertRawGitHubURL(link) for link in githubLinks if isinstance(link, str) and 'github.com' in link]
                 
                 if githubLinks:
-                    mod_data[mod_id] = {"version": version, "github": githubLinks[0]}
-                else:
-                   pass 
+                    mod_data[mod_id] = {"hash": file_hash, "version": version, "github": githubLinks[0]}
 
-    print(dumps(mod_data, indent=4))
+    with open(cache_file, 'w') as f:
+        dump(mod_data, f, indent=4)
 
 if __name__ == "__main__":
     main()
