@@ -21,6 +21,7 @@ jobs:
         with:
           sparse-checkout: |
             mods
+            .github/workflows
   analyze:
     runs-on: self-hosted
     permissions: {}
@@ -32,3 +33,9 @@ jobs:
       - name: Run Python Script
         run: |
           mod-linker.py
+      - name: Cache mod_data
+        uses: actions/cache@v4
+        with:
+          key: cache-mod-data-${{ hashFiles('**/mod_cache.json') }}
+          path: |
+            mods/mod_cache.json
