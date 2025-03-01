@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "7732d7e1b0ca82bd",
+        "id": "1db7575a43f9dab1",
         "type": "tabs",
         "children": [
           {
-            "id": "f5e005105a0be7d6",
+            "id": "3f55ce4fadbcdf1f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "canvas",
+              "state": {
+                "file": "workflows/new-content/Untitled.canvas",
+                "viewState": {
+                  "x": 838.7056352142906,
+                  "y": -610.0883072861128,
+                  "zoom": -0.8000000000000002
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ]
@@ -161,13 +168,24 @@
       "command-palette:Open command palette": false,
       "omnisearch:Omnisearch": false,
       "password-protection:Lock password protection": false,
-      "tags-routes:Open tags routes": false,
       "timelines-revamped:Insert Timeline Event": false,
-      "timelines-revamped:Insert Timeline Event (Frontmatter)": false
+      "timelines-revamped:Insert Timeline Event (Frontmatter)": false,
+      "tags-routes:Open tags routes": false
     }
   },
-  "active": "f5e005105a0be7d6",
+  "active": "3f55ce4fadbcdf1f",
   "lastOpenFiles": [
+    "workflows/new-content/dungeonpunk-2-1-logo.png",
+    "workflows/new-content/dungeonpunk-16-9-logo.png",
+    "workflows/new-content/dungeonpunk-logo.xcf",
+    "workflows/new-content/dungeonpunk-16-9.png",
+    "workflows/new-content/dungeonpunk-2-1.png",
+    "workflows/new-content/dungeonpunk-1-1.png",
+    "workflows/porting/Disable End-based origins.md",
+    "workflows/new-content/Untitled.canvas",
+    "workflows/new-content/Untitled.md",
+    "workflows/new-content",
+    "workflows/Untitled.md",
     "mods/mod_cache.json",
     "original-pack",
     "porting/AE2 Balancing Thread.md",
@@ -185,16 +203,9 @@
     "porting/research/Images",
     "porting/research/Images/Townships idea.png",
     "porting/research/Images/Redone Basket Slots.png",
-    "porting/research/Mod list snippet.png",
     "porting/research/Deceased Craft's Pufferfish Skills.zip",
-    "porting/research/DeceasedCraft weapon progression tree.png",
-    "Pasted image 20250220160822.png",
-    "porting/research/DeceasedCraft armor progression tree.png",
     "porting/conversations",
-    "porting/research/bugs/Piglins won't trade when given gold..mp4",
-    "porting/research/bugs",
     "porting/Ore Finder Tweaks.md",
-    "porting/research/latest.log - optimized jvm.md",
-    "porting/research/default jvm.sparkprofile"
+    "porting/research/latest.log - optimized jvm.md"
   ]
 }
