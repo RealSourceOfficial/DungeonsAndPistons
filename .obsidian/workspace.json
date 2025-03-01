@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "workflows/new-content/Untitled.canvas",
+                "file": "workflows/new-content/New stuffs.canvas",
                 "viewState": {
                   "x": 838.7056352142906,
-                  "y": -610.0883072861128,
+                  "y": -428.3785986440778,
                   "zoom": -0.8000000000000002
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "New stuffs"
             }
           }
         ]
@@ -168,12 +168,12 @@
       "command-palette:Open command palette": false,
       "omnisearch:Omnisearch": false,
       "password-protection:Lock password protection": false,
+      "tags-routes:Open tags routes": false,
       "timelines-revamped:Insert Timeline Event": false,
-      "timelines-revamped:Insert Timeline Event (Frontmatter)": false,
-      "tags-routes:Open tags routes": false
+      "timelines-revamped:Insert Timeline Event (Frontmatter)": false
     }
   },
-  "active": "3f55ce4fadbcdf1f",
+  "active": "a0e3db241638a71f",
   "lastOpenFiles": [
     "workflows/new-content/dungeonpunk-2-1-logo.png",
     "workflows/new-content/dungeonpunk-16-9-logo.png",
@@ -182,7 +182,7 @@
     "workflows/new-content/dungeonpunk-2-1.png",
     "workflows/new-content/dungeonpunk-1-1.png",
     "workflows/porting/Disable End-based origins.md",
-    "workflows/new-content/Untitled.canvas",
+    "workflows/new-content/New stuffs.canvas",
     "workflows/new-content/Untitled.md",
     "workflows/new-content",
     "workflows/Untitled.md",
