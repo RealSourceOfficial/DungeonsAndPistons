@@ -15,7 +15,7 @@
 	#Enable/Disable carcass weight effects
 	"Carcass Weight" = true
 	#Enable/Disable blocks weight effects
-	"Block Weight" = false
+	"Block Weight" = true
 	#Enable/Disable pillager disguise blending affect
 	"Pillager Disguise" = true
 	#Collect salt water from ocean biomes using a bucket
@@ -43,7 +43,7 @@
 
 ["Mod Compatiblities"]
 	#Enable/Disable farmers delight foods as drops
-	"Farmer's Delight" = false
+	"Farmer's Delight" = true
 	#Enable to make TFC mobs drop carcasses
 	"Terra Firma Craft Carcasses" = false
 	#Enable to use TFC drops instead of Butchery drops
