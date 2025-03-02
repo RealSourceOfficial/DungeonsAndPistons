@@ -11,17 +11,14 @@
             "id": "3f55ce4fadbcdf1f",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "workflows/porting/Project Board.canvas",
-                "viewState": {
-                  "x": -460.820090193855,
-                  "y": 3839.742436569051,
-                  "zoom": -0.40000000000000013
-                }
+                "file": "workflows/curseforge/Patchnotes 1.0a.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Project Board"
+              "icon": "lucide-file",
+              "title": "Patchnotes 1.0a"
             }
           }
         ]
@@ -175,6 +172,10 @@
   },
   "active": "3f55ce4fadbcdf1f",
   "lastOpenFiles": [
+    "workflows/porting/Project Board.canvas",
+    "workflows/curseforge/Patchnotes 1.0a.md",
+    "workflows/curseforge/Dungeons & Pistons-1.0.zip",
+    "workflows/curseforge",
     "kubejs/data/curios/tags/items/belt.json~",
     "kubejs/data/curios/tags/items/belt.json",
     "kubejs/data/curios/tags/items/charm.json~",
@@ -183,9 +184,6 @@
     "kubejs/data/curios/tags/items",
     "kubejs/data/curios/tags",
     "kubejs/data/curios",
-    "defaultconfigs/curios-server.toml",
-    "config/artifacts/common.json5~",
-    "config/supplementaries-common.toml~",
     "resourcepacks/custom 11+13/pack.png",
     "shaderpacks/ComplementaryReimagined_r5.4 + EuphoriaPatches_1.5.2/shaders/lib/textures/potato.png",
     "shaderpacks/ComplementaryReimagined_r5.4 + EuphoriaPatches_1.5.2/shaders/lib/textures/euphoria_patches.png",

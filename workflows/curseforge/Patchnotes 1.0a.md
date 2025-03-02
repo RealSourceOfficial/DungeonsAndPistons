@@ -1,4 +1,4 @@
-\## Artifacts:    
+## Artifacts:    
 - Reduced spawning chance of campsites (`4` -> `1`)    
 - Added Cloud in a Bottle as a charm    
 - Added Obsidian Skull as a charm    
