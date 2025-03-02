@@ -9,3 +9,7 @@ replay_pid*
 # base-install/
 # patchnotes/
 
+# for now
+resourcepacks/
+shaderpacks/
+
