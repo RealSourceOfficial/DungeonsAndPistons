@@ -3,16 +3,16 @@
 	#The purpose of the damage module is to remove the invulnerability ticks after an entity is damaged to better suit gameplay where entities are going to be ignoring too much damage if left unchecked. Disabling will nullify every feature listed under this module.
 	damageModuleEnabled = true
 	#Invulnerability Tick (I-Frame) count. Default: 0
-	invulnerabilityTickCount = 0
+	invulnerabilityTickCount = 1
 	#Specialized handling for player damage ticks. "ALL" means there is no special handling, "ONLY_LIVING" means only living attacks ignore player i-frames (may help with unforeseen damage like potions), and "NONE" means player's damage ticks are unaffected by the damage module.
 	#Allowed Values: ALL, ONLY_LIVING, NONE
-	playerDamageMode = "ALL"
+	playerDamageMode = "ONLY_LIVING"
 	#In order to prevent spam attacks, a minimum threshold of attack strength can be set before an attack can deal damage. Default: 0.75
 	minimumAttackStrength = 0.75
 	#Whether a player is allowed to even swing if the threshold is not met. Default: true
 	allowNonFullStrengthAttacks = true
 	#Global multiplier to all knockback. Default: 1.0
-	globalKnockbackMultiplier = 1.0
+	globalKnockbackMultiplier = 0.8
 
 [Durability-Module]
 	#The purpose of the durability module is to rework how durability damage is applied to better emulate an rpg setting.  Disabling will nullify every feature listed under this module.
@@ -56,7 +56,7 @@
 	#The purpose of the enchantment module is to mystify enchantments and add an additional challenge to game by obscuring the description of enchanted and cursed items found through looting. Disabling will nullify every feature listed under this module.
 	enchantmentModuleEnabled = true
 	#Whether or not armor should be automatically identified when equipped. Default: true
-	identifyOnEquip = true
+	identifyOnEquip = false
 	#Whether or not unidentified items can be identified by interacting with an enchanting table. Default: true
 	identifyOnEnchantingTable = true
 	#Whether or not the enchanting table's functionality should be disabled, making looting or trading the only way to get enchanted items. Default: false
