@@ -302,9 +302,9 @@
 				hand_crank = 8.0
 				steam_engine = 1024.0
 				creative_motor = 16384.0
-				large_water_wheel = 128.0
-				water_wheel = 32.0
-				windmill_bearing = 512.0
+				large_water_wheel = 64.0
+				water_wheel = 16.0
+				windmill_bearing = 256.0
 
 #.
 #Create's liquid manipulation tools
@@ -392,7 +392,7 @@
 	#.
 	#.
 	#Whether placing a Schematic directly in Creative Mode should replace world blocks with Air
-	creativePrintIncludesAir = false
+	creativePrintIncludesAir = true
 	#.
 	#The amount of Schematics a player can upload until previous ones are overwritten.
 	#Range: > 1
@@ -507,15 +507,15 @@
 		#[in Blocks/Second]
 		#The top speed of powered Trains.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		poweredTrainTopSpeed = 40.0
+		poweredTrainTopSpeed = 48.0
 		#.
 		#[in Blocks/Second]
 		#The top speed of powered Trains during a turn.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		poweredTrainTurningTopSpeed = 20.0
+		poweredTrainTurningTopSpeed = 24.0
 		#.
 		#[in Blocks/Second²]
 		#The acceleration of powered Trains.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		poweredTrainAcceleration = 3.0
+		poweredTrainAcceleration = 4.8
 
