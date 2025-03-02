@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "workflows/curseforge/Patchnotes 1.0a.md",
+                "file": "workflows/curseforge/Patchnotes 1.0.1a.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Patchnotes 1.0a"
+              "title": "Patchnotes 1.0.1a"
             }
           }
         ]
@@ -172,8 +172,9 @@
   },
   "active": "3f55ce4fadbcdf1f",
   "lastOpenFiles": [
-    "workflows/porting/Project Board.canvas",
     "workflows/curseforge/Patchnotes 1.0a.md",
+    "workflows/curseforge/Patchnotes 1.0.1a.md",
+    "workflows/porting/Project Board.canvas",
     "workflows/curseforge/Dungeons & Pistons-1.0.zip",
     "workflows/curseforge",
     "kubejs/data/curios/tags/items/belt.json~",
