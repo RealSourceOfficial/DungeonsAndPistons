@@ -1,0 +1,13 @@
+{
+  "replace": "false",
+  "values": [
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:obsidian_skull",
+    "artifacts:antidote_vessel",
+    "artifacts:universal_attractor",
+    "artifacts:crystal_heart",
+    "artifacts:chorus_totem",
+    "map_atlases:atlas",
+    "supplementaries:key"
+  ]
+}
