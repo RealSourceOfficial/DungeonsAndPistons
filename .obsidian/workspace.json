@@ -15,9 +15,9 @@
               "state": {
                 "file": "workflows/porting/Project Board.canvas",
                 "viewState": {
-                  "x": 6900.274158991032,
-                  "y": 1887.5480713563786,
-                  "zoom": -0.4000000000000006
+                  "x": 7515.867057004054,
+                  "y": 1927.2735202457543,
+                  "zoom": -0.8000000000000002
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -175,6 +175,13 @@
   },
   "active": "3f55ce4fadbcdf1f",
   "lastOpenFiles": [
+    "config/jei/jei-client.ini~",
+    "defaultconfigs/solapplepie-server.toml~",
+    "defaultconfigs/irons_spellbooks-server.toml~",
+    "defaultconfigs/irons_rpg_tweaks-server.toml~",
+    "defaultconfigs/create-server.toml~",
+    "config/map_atlases-common.toml~",
+    "config/butcher.toml~",
     "config/origins-common.toml~",
     "workflows/new-content/New stuffs.canvas",
     "workflows/new-content/dungeonpunk-2-1-logo.png",
@@ -188,7 +195,6 @@
     "workflows/new-content",
     "workflows/Untitled.md",
     "mods/mod_cache.json",
-    "original-pack",
     "porting/AE2 Balancing Thread.md",
     "porting/Create TFMG.md",
     "porting/attributeFix Thread.md",
@@ -197,14 +203,8 @@
     "porting/research/Images/Changed Binds.png",
     "porting/research/Images/Asset Creation Instructions.png",
     "porting/research/Images/Mod sites and general ideas.png",
-    "porting/research/Hearts idea - Wrote by RealSourceOfficial, textured by Wolfie.zip",
-    "porting/research/Various KubeJS Scripts - Wrote by RealSourceOfficial.zip",
-    "porting/research/FTBQuests - Wrote by RealSourceOfficial.zip",
     "porting/research/Images/Nether Portal.png",
-    "porting/research/Images",
     "porting/research/Images/Townships idea.png",
-    "porting/research/Deceased Craft's Pufferfish Skills.zip",
-    "porting/conversations",
     "porting/Ore Finder Tweaks.md",
     "porting/research/latest.log - optimized jvm.md"
   ]
