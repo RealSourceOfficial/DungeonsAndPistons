@@ -1,0 +1,23 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "ADreadedKing": 1,
+    "The": 2,
+    "Only": 3,
+    "added": 4,
+    "basically": 5,
+    "It": 6,
+    "Ores": 7,
+    "euphoria-patches": 8
+  },
+  "_version": 3
+}
