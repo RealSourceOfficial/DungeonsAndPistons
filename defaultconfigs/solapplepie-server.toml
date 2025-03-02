@@ -37,7 +37,7 @@
 	#
 	#
 	#Range: 0 ~ 1000
-	minFoodsToActivate = 0
+	minFoodsToActivate = 3
 
 [Filtering]
 	# Foods in this list won't contribute to food diversity.
@@ -102,7 +102,7 @@
 	#
 	#
 	#Range: 0 ~ 1000
-	startDecay = 0
+	startDecay = 8
 	#
 	# Whether blacklisted foods should still take a spot in the queue, even if they don't contribute any diversity.
 	#
